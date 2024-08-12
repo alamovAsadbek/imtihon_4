@@ -1,3 +1,4 @@
+import contextlib
 import json
 import os
 import random
@@ -13,19 +14,26 @@ class JsonManager:
         self.file_name: str = file_name
 
     @log_decorator
+    @contextlib.contextmanager
+    def open_json(self, mode: str):
+        file = open(self.file_name, mode)
+        yield file
+        file.close()
+
+    @log_decorator
     def read(self) -> dict or bool:
         try:
-            with open(self.file_name, 'r') as file:
+            with self.open_json(mode='r') as file:
                 data = json.load(file)
                 return data
         except FileNotFoundError:
-            with open(self.file_name, 'w') as file:
+            with self.open_json(mode='w') as file:
                 json.dump([], file, indent=4)
                 return []
 
     @log_decorator
     def write(self, data) -> bool:
-        with open(self.file_name, 'w') as file:
+        with self.open_json(mode="w") as file:
             json.dump(data, file, indent=4)
             return True
 

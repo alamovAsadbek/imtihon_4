@@ -1,16 +1,41 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from main_files.auth import Auth
+from main_files.decorator_func import log_decorator
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+@log_decorator
+def show_auth():
+    text = '''
+1. Login
+2. Logout
+    '''
+    print(text)
+    try:
+        user_input = int(input('Choose menu: '))
+        if user_input == 1:
+            result_login = auth.login()
+            if not result_login['is_login']:
+                show_auth()
+            elif result_login['role'] == "admin":
+                pass
+        elif user_input == 2:
+            pass
+        else:
+            print('Wrong input')
+            show_auth()
+    except ValueError:
+        print("Invalid input")
+        show_auth()
+    except Exception as e:
+        print(f'Error: {e}')
+        show_auth()
 
 
-# Press the green button in the gutter to run the script.
+@log_decorator
+def show_admin_menu():
+    pass
+
+
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    auth = Auth()
+    auth.logout()
+    show_auth()
