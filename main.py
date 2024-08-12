@@ -41,9 +41,9 @@ def show_admin_menu():
     try:
         user_input = int(input('Choose menu: '))
         if user_input == 1:
-            pass
+            admin_student_menu()
         elif user_input == 2:
-            pass
+            admin_group_menu()
         elif user_input == 3:
             auth.logout()
             show_auth()
@@ -59,7 +59,7 @@ def show_admin_menu():
 
 
 @log_decorator
-def admin_groups_menu():
+def admin_group_menu():
     text = '''
 1. Create Group
 2. Show all groups
@@ -82,10 +82,40 @@ def admin_groups_menu():
             show_admin_menu()
     except ValueError:
         print("Invalid input")
-        admin_groups_menu()
+        admin_group_menu()
     except Exception as e:
         print(f'Error: {e}')
-        admin_groups_menu()
+        admin_group_menu()
+
+
+@log_decorator
+def admin_student_menu():
+    text = '''
+1. Create Student
+2. Update Student
+3. Delete Student
+4. Show all students
+5. Back
+    '''
+    print(text)
+    try:
+        user_input = int(input('Choose menu: '))
+        if user_input == 1:
+            pass
+        elif user_input == 2:
+            pass
+        elif user_input == 3:
+            pass
+        elif user_input == 4:
+            pass
+        elif user_input == 5:
+            show_admin_menu()
+    except ValueError:
+        print("Invalid input")
+        admin_student_menu()
+    except Exception as e:
+        print(f'Error: {e}')
+        admin_student_menu()
 
 
 @log_decorator
