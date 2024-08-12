@@ -18,7 +18,7 @@ class Auth:
         password: str = hashlib.sha256(input('Enter password: ').strip().encode('utf-8')).hexdigest()
         if username == self.__admin_username and password == hashlib.sha256(
                 self.__admin_password.encode('utf-8')).hexdigest():
-            return {'is_login': True, 'role': 'admin'}
+            return {'is_login': True, 'role': 'super_admin'}
         if not user_manager.check_username(username=username):
             print('Username not found')
             return {'is_login': False, 'role': "admin"}

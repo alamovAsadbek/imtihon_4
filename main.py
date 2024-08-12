@@ -1,5 +1,6 @@
 from main_files.auth import Auth
 from main_files.decorator_func import log_decorator
+from role.super_admin.super_admin import SuperAdmin
 
 
 # This function is auth menu
@@ -16,10 +17,20 @@ def show_auth():
             result_login = auth.login()
             if not result_login['is_login']:
                 show_auth()
+            elif result_login['role'] == "super_admin":
+                show_super_admin_menu()
             elif result_login['role'] == "admin":
-                pass
+                show_admin_menu()
+            elif result_login['role'] == "teacher":
+                show_teacher_menu()
+            elif result_login['role'] == "student":
+                show_student_menu()
+            else:
+                print("Something went wrong")
+                show_auth()
         elif user_input == 2:
-            pass
+            print("Good bye!")
+            return True
         else:
             print('Wrong input')
             show_auth()
@@ -44,7 +55,7 @@ def show_super_admin_menu():
     try:
         user_input = int(input('Choose menu: '))
         if user_input == 1:
-            pass
+            super_admin_admin_menu()
         elif user_input == 2:
             admin_student_menu()
         elif user_input == 3:
@@ -61,6 +72,44 @@ def show_super_admin_menu():
     except Exception as e:
         print(f'Error: {e}')
         show_super_admin_menu()
+
+
+@log_decorator
+def super_admin_admin_menu():
+    text = '''
+1. Add Admin
+2. Update Admin
+3. Delete Admin
+4. Show all Admins
+5. Back
+    '''
+    print(text)
+    try:
+        super_admin = SuperAdmin()
+        user_input = int(input('Choose menu: '))
+        if user_input == 1:
+            print("\nThis menu is add admin menu\n")
+            super_admin.add_new_admin()
+            super_admin_admin_menu()
+        elif user_input == 2:
+            print("\nThis menu is update admin menu\n")
+            super_admin.update_admin()
+            super_admin_admin_menu()
+        elif user_input == 3:
+            pass
+        elif user_input == 4:
+            pass
+        elif user_input == 5:
+            show_super_admin_menu()
+        else:
+            print('Wrong input')
+            super_admin_admin_menu()
+    except ValueError:
+        print("Invalid input")
+        super_admin_admin_menu()
+    except Exception as e:
+        print(f'Error: {e}')
+        super_admin_admin_menu()
 
 
 # student section belonging to super admin

@@ -28,8 +28,8 @@ class JsonManager:
                 return data
         except FileNotFoundError:
             with self.open_json(mode='w') as file:
-                json.dump([], file, indent=4)
-                return []
+                json.dump({}, file, indent=4)
+                return {}
 
     @log_decorator
     def write(self, data) -> bool:
@@ -73,7 +73,7 @@ class JsonManager:
 
     @log_decorator
     def get_data(self, data_id) -> dict or bool:
-        all_users: list = self.read()
+        all_users: dict = self.read()
         try:
             for data in all_users:
                 if data['id'] == data_id:
@@ -85,12 +85,11 @@ class JsonManager:
     @log_decorator
     def random_id(self):
         try:
-            all_data: list = self.read()
+            all_data: dict = self.read()
             while True:
-                random_number: int = random.randint(1, 9999)
-                for data in all_data:
-                    if data['id'] == random_number:
-                        break
+                random_number: int = random.randint(1, 99999)
+                if random_number.__str__() in all_data.keys():
+                    continue
                 return random_number
         except Exception as e:
             print(f'Error: {e}')
