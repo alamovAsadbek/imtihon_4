@@ -60,7 +60,32 @@ def show_admin_menu():
 
 @log_decorator
 def admin_groups_menu():
-    pass
+    text = '''
+1. Create Group
+2. Show all groups
+3. Delete Group
+4. Update Group
+5. Back
+    '''
+    print(text)
+    try:
+        user_input = int(input('Choose menu: '))
+        if user_input == 1:
+            pass
+        elif user_input == 2:
+            pass
+        elif user_input == 3:
+            pass
+        elif user_input == 4:
+            pass
+        elif user_input == 5:
+            show_admin_menu()
+    except ValueError:
+        print("Invalid input")
+        admin_groups_menu()
+    except Exception as e:
+        print(f'Error: {e}')
+        admin_groups_menu()
 
 
 @log_decorator
