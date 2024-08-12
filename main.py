@@ -59,6 +59,11 @@ def show_admin_menu():
 
 
 @log_decorator
+def admin_groups_menu():
+    pass
+
+
+@log_decorator
 def show_teacher_menu():
     text = '''
 1. Show all groups
@@ -84,6 +89,34 @@ def show_teacher_menu():
     except Exception as e:
         print(f'Error: {e}')
         show_teacher_menu()
+
+
+@log_decorator
+def show_student_menu():
+    text = '''
+1. Show all my groups
+2. Profile
+3. Logout
+    '''
+    print(text)
+    try:
+        user_input = int(input('Choose menu: '))
+        if user_input == 1:
+            pass
+        elif user_input == 2:
+            pass
+        elif user_input == 3:
+            auth.logout()
+            show_auth()
+        else:
+            print('Wrong input')
+            show_student_menu()
+    except ValueError:
+        print("Invalid input")
+        show_student_menu()
+    except Exception as e:
+        print(f'Error: {e}')
+        show_student_menu()
 
 
 if __name__ == '__main__':
