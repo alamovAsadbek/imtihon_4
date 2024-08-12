@@ -60,7 +60,30 @@ def show_admin_menu():
 
 @log_decorator
 def show_teacher_menu():
-    pass
+    text = '''
+1. Show all groups
+2. Search teachers by group name
+3. Start lesson
+4. Logout
+    '''
+    print(text)
+    try:
+        user_input = int(input('Choose menu: '))
+        if user_input == 1:
+            pass
+        elif user_input == 2:
+            pass
+        elif user_input == 3:
+            pass
+        elif user_input == 4:
+            auth.logout()
+            show_auth()
+    except ValueError:
+        print("Invalid input")
+        show_teacher_menu()
+    except Exception as e:
+        print(f'Error: {e}')
+        show_teacher_menu()
 
 
 if __name__ == '__main__':
