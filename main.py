@@ -32,6 +32,34 @@ def show_auth():
 
 @log_decorator
 def show_admin_menu():
+    text = '''
+1. Group
+2. Student
+3. Logout
+    '''
+    print(text)
+    try:
+        user_input = int(input('Choose menu: '))
+        if user_input == 1:
+            pass
+        elif user_input == 2:
+            pass
+        elif user_input == 3:
+            auth.logout()
+            show_auth()
+        else:
+            print('Wrong input')
+            show_admin_menu()
+    except ValueError:
+        print("Invalid input")
+        show_admin_menu()
+    except Exception as e:
+        print(f'Error: {e}')
+        show_admin_menu()
+
+
+@log_decorator
+def show_teacher_menu():
     pass
 
 
