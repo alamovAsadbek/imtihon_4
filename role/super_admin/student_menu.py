@@ -21,6 +21,10 @@ class StudentMenu:
                 continue
             break
         email: str = input('Email: ').strip()
+        while not user_manager.is_valid_email_format(email):
+            print("Email validation failed, please try again.")
+            print("Example: email@gmail.com")
+            email: str = input('Email: ').strip()
         while user_manager.check_data_by_key(key='email', value=email):
             print("This email is already in use.")
             email: str = input('Email: ').strip()

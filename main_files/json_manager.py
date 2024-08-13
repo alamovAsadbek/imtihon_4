@@ -2,6 +2,7 @@ import contextlib
 import json
 import os
 import random
+import re
 import threading
 
 from main_files.decorator_func import log_decorator
@@ -80,6 +81,11 @@ class JsonManager:
                 threading.Thread(target=self.write, args=(all_data,)).start()
                 return True
         return False
+
+    @log_decorator
+    def is_valid_email_format(self, email):
+        pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+        return re.match(pattern, email) is not None
 
     @log_decorator
     def check_data_by_key(self, key: str, value: str) -> bool:
