@@ -323,21 +323,29 @@ def admin_student_menu():
     '''
     print(text)
     try:
+        admin = Admin()
         user_input = int(input('Choose menu: '))
         if user_input == 1:
             print('\nHome -> Student -> Create student\n')
-            pass
+            admin.create_student()
+            admin_student_menu()
         elif user_input == 2:
             print('\nHome -> Student -> Update student\n')
-            pass
+            admin.update_student()
+            admin_student_menu()
         elif user_input == 3:
             print('\nHome -> Student -> Delete student\n')
-            pass
+            admin.delete_group()
+            admin_student_menu()
         elif user_input == 4:
             print('\nHome -> Student -> Show all students\n')
-            pass
+            admin.show_all_groups()
+            admin_student_menu()
         elif user_input == 5:
             show_admin_menu()
+        else:
+            print("Wrong input")
+            admin_student_menu()
     except ValueError:
         print("Invalid input")
         admin_student_menu()
