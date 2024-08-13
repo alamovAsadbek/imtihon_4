@@ -13,7 +13,7 @@ class Auth:
 
     @log_decorator
     def login(self) -> dict:
-        all_users: list = user_manager.read()
+        all_users: dict = user_manager.read()
         username: str = input("Username: ").strip().lower()
         password: str = hashlib.sha256(input('Enter password: ').strip().encode('utf-8')).hexdigest()
         if username == self.__admin_username and password == hashlib.sha256(
@@ -22,7 +22,7 @@ class Auth:
         if not user_manager.check_username(username=username):
             print('Username not found')
             return {'is_login': False, 'role': "admin"}
-        for user in all_users:
+        for user in all_users.values():
             if user['username'] == username and user['password'] == password:
                 user['is_login'] = True
                 if user_manager.write(data=all_users):
@@ -34,8 +34,8 @@ class Auth:
     @log_decorator
     def logout(self) -> bool:
         try:
-            all_users: list = user_manager.read()
-            for user in all_users:
+            all_users: dict = user_manager.read()
+            for user in all_users.values():
                 user['is_login'] = False
             user_manager.write(all_users)
             return True

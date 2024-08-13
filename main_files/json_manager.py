@@ -2,6 +2,7 @@ import contextlib
 import json
 import os
 import random
+import threading
 
 from main_files.decorator_func import log_decorator
 
@@ -38,10 +39,10 @@ class JsonManager:
             return True
 
     @log_decorator
-    def check_username(self, username) -> bool:
-        all_users: list = self.read()
+    def check_username(self, username: str) -> bool:
+        all_users: dict = self.read()
         try:
-            for user in all_users:
+            for user in all_users.values():
                 if user['username'] == username:
                     return True
             return False
@@ -51,8 +52,8 @@ class JsonManager:
     @log_decorator
     def append_data(self, data) -> bool:
         try:
-            all_data: list = self.read()
-            all_data.append(data)
+            all_data: dict = self.read()
+            all_data.update(data)
             self.write(all_data)
             return True
         except Exception as e:
@@ -63,9 +64,9 @@ class JsonManager:
     def get_active_user(self) -> dict or bool:
         all_users: list = self.read()
         try:
-            for user in all_users:
-                if user['is_login']:
-                    return user
+            for key, value in all_users:
+                if value['is_login']:
+                    return value
             return False
         except Exception as e:
             print(f'Error: {e}')
@@ -75,12 +76,21 @@ class JsonManager:
     def get_data(self, data_id) -> dict or bool:
         all_users: dict = self.read()
         try:
-            for data in all_users:
-                if data['id'] == data_id:
-                    return data
+            if data_id.__str__() in all_users.keys():
+                return all_users[data_id.__str__()]
             return False
         except KeyError:
             return False
+
+    @log_decorator
+    def delete_data(self, data_id: int) -> bool:
+        all_data: dict = self.read()
+        for index, data in enumerate(all_data.values()):
+            if data['id'].__str__() == data_id.__str__():
+                del all_data[data_id]
+                threading.Thread(target=self.write, args=(all_data,)).start()
+                return True
+        return False
 
     @log_decorator
     def random_id(self):

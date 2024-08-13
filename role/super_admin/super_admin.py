@@ -15,12 +15,12 @@ class SuperAdmin:
     # admin
     @log_decorator
     def show_all_admins(self) -> bool:
-        all_admins = user_manager.read()
+        all_admins: dict = user_manager.read()
         count = 1
         if len(all_admins) == 0:
             print('No admins found.')
             return False
-        for admin in all_admins:
+        for admin in all_admins.values():
             if admin['role'] == 'admin':
                 print(f"{count}. ID: {admin['id']} Fullname: {admin['full_name']}, Username: {admin['username']}, "
                       f"Role: {admin['role']}, Created: {admin['create_date']}")
@@ -34,9 +34,12 @@ class SuperAdmin:
     def add_new_admin(self, data: dict = None) -> bool:
         full_name = input('Full name: ').strip()
         username = input('Username: ').strip()
-        while user_manager.check_username(username=username) or username == self.__admin_username:
-            print('Username is taken. Please try again.')
-            username = input('Username: ').strip()
+        while True:
+            if data is not None and data['username'] == username:
+                break
+            if user_manager.check_username(username=username) or username == self.__admin_username:
+                print('Username is taken. Please try again.')
+                username = input('Username: ').strip()
         while True:
             password = hashlib.sha256(input('Password: ').strip().encode('utf-8')).hexdigest()
             confirm_password = hashlib.sha256(input('Confirm password: ').strip().encode('utf-8')).hexdigest()
@@ -57,7 +60,6 @@ class SuperAdmin:
             'is_login': False
         }}
         threading.Thread(target=user_manager.append_data, args=(data,)).start()
-        print('Admin successfully added.')
         return True
 
     @log_decorator
@@ -76,3 +78,13 @@ class SuperAdmin:
             return True
         print("Something went wrong. Please try again.")
         return False
+
+    @log_decorator
+    def delete_admin(self) -> bool:
+        if not self.show_all_admins():
+            return False
+        admin_id = int(input('\nEnter admin id: ').strip())
+        get_admin = user_manager.get_data(data_id=admin_id)
+        if get_admin is False:
+            print('No admin found.')
+            return False
