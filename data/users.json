@@ -39,7 +39,7 @@
         "phone_number": false,
         "email": false,
         "xp": 0,
-        "is_login": false
+        "is_login": true
     },
     "73232": {
         "id": 73232,

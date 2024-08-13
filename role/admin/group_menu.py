@@ -81,6 +81,7 @@ class GroupMenu:
             return False
         group_id = group_manager.random_id()
         group_data = {f'{group_id}': {
+            'id': group_id,
             'name': group_name,
             'max_student': max_student,
             'start_time': start_time,

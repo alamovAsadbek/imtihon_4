@@ -1,5 +1,6 @@
 {
-    "1907": {
+    "89020": {
+        "id": 89020,,
         "name": "n50",
         "max_student": 15,
         "start_time": "14.09.2024",
@@ -7,6 +8,6 @@
         "teacher": 66139,
         "status": "not_started",
         "students": [],
-        "create_date": "240814015356"
+        "create_date": "2024-08-14 02:00:31"
     }
 }
