@@ -59,5 +59,8 @@ class SuperAdmin:
 
     @log_decorator
     def show_all_students(self):
-        self.__student_menu.show_all_students()
+        for student in self.__student_menu.show_all_students():
+            if student is None or student is False:
+                print("Student Not Found")
+            print(student)
         return True
