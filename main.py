@@ -57,7 +57,7 @@ def show_super_admin_menu():
         if user_input == 1:
             super_admin_admin_menu()
         elif user_input == 2:
-            admin_student_menu()
+            super_admin_student_menu()
         elif user_input == 3:
             pass
         elif user_input == 4:
@@ -128,9 +128,11 @@ def super_admin_student_menu():
     '''
     print(text)
     try:
+        super_admin = SuperAdmin()
         user_input = int(input('Choose menu: '))
         if user_input == 1:
-            pass
+            super_admin.add_student()
+            super_admin_student_menu()
         elif user_input == 2:
             pass
         elif user_input == 3:

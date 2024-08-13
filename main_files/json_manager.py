@@ -85,7 +85,7 @@ class JsonManager:
     def check_data_by_key(self, key: str, value: str) -> bool:
         all_users: dict = self.read()
         for user in all_users.values():
-            if user[key] == data:
+            if user[key] == value:
                 return True
         return False
 

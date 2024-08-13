@@ -47,8 +47,8 @@ class AdminMenu:
                 username = input('Username: ').strip()
                 continue
             break
+        gender = 'male'
         while True:
-            global gender
             print("Choose gender:")
             print(f'1. Male \t 2. Female')
             user_choice: int = int(input('Enter your choice: ').strip())
