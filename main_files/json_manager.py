@@ -111,3 +111,4 @@ class JsonManager:
 
 user_manager = JsonManager(file_name='data/users.json')
 group_manager = JsonManager(file_name='data/groups.json')
+payment_manager = JsonManager(file_name='data/payments.json')

@@ -272,7 +272,8 @@ def show_admin_menu():
             show_admin_menu()
         elif user_input == 5:
             print('\nHome -> Payment\n')
-            pass
+            admin.payment_student()
+            show_admin_menu()
         elif user_input == 6:
             print("Logout successful")
             auth.logout()

@@ -72,4 +72,12 @@ class Admin:
                 return False
             print(data)
         return True
+
     # /search student
+
+    # payment
+    @log_decorator
+    def payment_student(self) -> bool:
+        self.__student_group.student_payment()
+        return True
+    # /payment
