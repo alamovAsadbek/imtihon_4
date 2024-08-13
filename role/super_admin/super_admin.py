@@ -59,6 +59,5 @@ class SuperAdmin:
 
     @log_decorator
     def show_all_students(self):
-        pass
-        # self.__student_menu.show_all_students()
-        # return True
+        self.__student_menu.show_all_students()
+        return True
