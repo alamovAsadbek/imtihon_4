@@ -8,6 +8,10 @@ from role.super_admin.student_menu import StudentMenu
 
 class StudentGroup:
     def __init__(self):
+        """
+
+        :rtype: object
+        """
         self.__student_menu = StudentMenu()
         self.__group_menu = GroupMenu()
 
@@ -35,8 +39,31 @@ class StudentGroup:
             print("Student not found")
             return False
         get_group: dict = group_manager.get_data(data_id=choose_group)
+        if choose_student in get_group['students']:
+            print("Student already in group")
+            return False
+        elif get_group['max_student'] == len(get_group['students']):
+            print("The group is full")
+            return False
         get_group['students'].append(get_student['id'])
         group_data = {f'{get_group["id"]}': get_group}
         threading.Thread(target=group_manager.append_data, args=(group_data,)).start()
         print("Student added to group")
         return True
+
+    @log_decorator
+    def search_student(self) -> bool:
+        all_students: dict = user_manager.read()
+        count = 1
+        key_word = input("Search: ").strip().lower()
+        for student in all_students.values():
+            if student['role'] == 'student':
+                if key_word in student['full_name'].lower() or key_word in student['username']:
+                    yield f"{count}. ID: {student['id']}, Fullname: {student['full_name']}, Username: {student['username']}, "
+                    f"Age: {student['age']}, Email: {student['email']}, Phone number: {student['phone_number']}, "
+                    f"Gender: {student['gender']}, Role: {student['role']}, XP: {student['xp']} "
+                    f"Created: {student['create_date']}"
+                    count += 1
+        if count == 1:
+            print("No students found.")
+            return False

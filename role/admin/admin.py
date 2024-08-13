@@ -7,6 +7,7 @@ from role.super_admin.student_menu import StudentMenu
 
 
 class Admin:
+
     def __init__(self):
         self.__created_data = datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S").__str__()
         self.__group_menu = GroupMenu()
@@ -60,4 +61,15 @@ class Admin:
     def add_student_to_group(self) -> bool:
         self.__student_group.add_student_to_group()
         return True
+
     # /add student to group
+
+    # search student
+    @log_decorator
+    def search_student(self) -> bool:
+        for data in self.__student_group.search_student():
+            if data is False or data is None:
+                return False
+            print(data)
+        return True
+    # /search student

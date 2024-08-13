@@ -268,7 +268,8 @@ def show_admin_menu():
             show_admin_menu()
         elif user_input == 4:
             print('\nHome -> Search student\n')
-            pass
+            admin.search_student()
+            show_admin_menu()
         elif user_input == 5:
             print('\nHome -> Payment\n')
             pass
