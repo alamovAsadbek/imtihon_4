@@ -253,10 +253,10 @@ def show_admin_menu():
         user_input = int(input('Choose menu: '))
         if user_input == 1:
             print('\nHome -> Group\n')
-            admin_student_menu()
+            admin_group_menu()
         elif user_input == 2:
             print('\nHome -> Student\n')
-            admin_group_menu()
+            admin_student_menu()
         elif user_input == 3:
             print("Logout successful")
             auth.logout()
