@@ -9,7 +9,7 @@ from main_files.json_manager import user_manager, group_manager
 
 class GroupMenu:
     def __init__(self):
-        self.__created_data = datetime.now().strftime("%y%m%d%H%M%S").__str__()
+        self.__create_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S').__str__()
 
     @log_decorator
     def show_all_teacher(self):
@@ -88,7 +88,7 @@ class GroupMenu:
             'teacher': get_teacher['id'],
             'status': 'not_started',
             'students': [],
-            'create_date': self.__created_data
+            'create_date': self.__create_date
         }}
         threading.Thread(target=group_manager.append_data, args=(group_data,)).start()
         print(f"Group {group_name} created successfully")
