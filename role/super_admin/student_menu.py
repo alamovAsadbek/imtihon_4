@@ -14,8 +14,25 @@ class StudentMenu:
         self.__admin_email = 'alamovasad@gmail.com'
         self.__created_data = datetime.now().strftime("%d/%m/%Y %H:%M:%S").__str__()
 
+    # this function is show all students
     @log_decorator
-    def add_student(self):
+    def show_all_students(self):
+        all_students: dict = user_manager.read()
+        count = 1
+        for student in all_students.values():
+            if student['role'] == 'student':
+                yield (
+                    f"{count}. ID: {student['id']}, Fullname: {student['full_name']}, Username: {student['username']}, "
+                    f"Age: {student['age']}, Email: {student['email']}, Phone number: {student['phone_number']}, "
+                    f"Gender: {student['gender']}, Role: {student['role']}, XP: {student['xp']} "
+                    f"Created: {student['create_date']}")
+                count += 1
+        if count == 1:
+            return False
+
+    # this function is add student
+    @log_decorator
+    def add_student(self) -> bool:
         email_sender = EmailSender()
         fullname: str = input('Full name: ').strip()
         while len(fullname) < 3:
@@ -88,3 +105,11 @@ class StudentMenu:
                          kwargs={'subject': email_subject, 'body': body, 'to_email': email}).start()
         print('Information has been sent to the student')
         return True
+
+    @log_decorator
+    def update_student(self):
+        for student in self.show_all_students():
+            if student is None or student is False:
+                print("Students not found")
+                return False
+            print(student)

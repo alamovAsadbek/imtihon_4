@@ -131,10 +131,13 @@ def super_admin_student_menu():
         super_admin = SuperAdmin()
         user_input = int(input('Choose menu: '))
         if user_input == 1:
+            print(f'\nThis menu is create student \n')
             super_admin.add_student()
             super_admin_student_menu()
         elif user_input == 2:
-            pass
+            print("\nThis menu is update student \n")
+            super_admin.update_admin()
+            super_admin_student_menu()
         elif user_input == 3:
             pass
         elif user_input == 4:
