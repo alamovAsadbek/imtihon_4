@@ -247,7 +247,10 @@ def show_admin_menu():
     text = '''
 1. Group
 2. Student
-3. Logout
+3. Add a student to a group
+4. Search student
+5. Payment
+6. Logout
     '''
     print(text)
     try:
@@ -259,6 +262,15 @@ def show_admin_menu():
             print('\nHome -> Student\n')
             admin_student_menu()
         elif user_input == 3:
+            print('\nHome -> Add student to group\n')
+            pass
+        elif user_input == 4:
+            print('\nHome -> Search student\n')
+            pass
+        elif user_input == 5:
+            print('\nHome -> Payment\n')
+            pass
+        elif user_input == 6:
             print("Logout successful")
             auth.logout()
             show_auth()

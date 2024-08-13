@@ -49,4 +49,11 @@ class Admin:
     def show_all_student(self) -> bool:
         self.__student_menu.show_all_students()
         return True
+
     # / student
+
+    # add student to group
+    @log_decorator
+    def add_student_to_group(self) -> bool:
+        pass
+    # /add student to group
