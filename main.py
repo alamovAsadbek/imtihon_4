@@ -1,5 +1,6 @@
 from main_files.auth import Auth
 from main_files.decorator_func import log_decorator
+from role.admin.admin import Admin
 from role.super_admin.super_admin import SuperAdmin
 
 
@@ -284,10 +285,12 @@ def admin_group_menu():
     '''
     print(text)
     try:
+        admin = Admin()
         user_input = int(input('Choose menu: '))
         if user_input == 1:
             print('\nHome -> Group -> Create group\n')
-            pass
+            admin.create_group()
+            admin_group_menu()
         elif user_input == 2:
             print('\nHome -> Group -> Update group\n')
             pass
