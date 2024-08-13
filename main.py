@@ -254,6 +254,7 @@ def show_admin_menu():
     '''
     print(text)
     try:
+        admin = Admin()
         user_input = int(input('Choose menu: '))
         if user_input == 1:
             print('\nHome -> Group\n')
@@ -263,7 +264,8 @@ def show_admin_menu():
             admin_student_menu()
         elif user_input == 3:
             print('\nHome -> Add student to group\n')
-            pass
+            admin.add_student_to_group()
+            show_admin_menu()
         elif user_input == 4:
             print('\nHome -> Search student\n')
             pass

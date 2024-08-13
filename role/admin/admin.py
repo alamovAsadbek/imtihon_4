@@ -2,6 +2,7 @@ import datetime
 
 from main_files.decorator_func import log_decorator
 from role.admin.group_menu import GroupMenu
+from role.admin.student_group import StudentGroup
 from role.super_admin.student_menu import StudentMenu
 
 
@@ -10,6 +11,7 @@ class Admin:
         self.__created_data = datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S").__str__()
         self.__group_menu = GroupMenu()
         self.__student_menu = StudentMenu()
+        self.__student_group = StudentGroup()
 
     # group
     @log_decorator
@@ -55,5 +57,6 @@ class Admin:
     # add student to group
     @log_decorator
     def add_student_to_group(self) -> bool:
-        pass
+        self.__student_group.add_student_to_group()
+        return True
     # /add student to group
