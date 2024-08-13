@@ -25,6 +25,20 @@ class GroupMenu:
             return False
 
     @log_decorator
+    def show_all_group(self):
+        all_group: dict = group_manager.read()
+        count = 1
+        for group in all_group.values():
+            teacher = user_manager.get_data(data_id=group['teacher'])
+            yield (f"{count}. ID: {group['id']}, Name: {group['name']}, Max student: {group['max_student']}, "
+                   f"Start time: {group['start_time']}, End time: {group['end_time']}, "
+                   f"Teacher name: {teacher['full_name']}, Current students: {len(group['students'])}, "
+                   f"Status: {group['status']}")
+            count += 1
+        if count == 1:
+            return False
+
+    @log_decorator
     def add_months(self, date_string, months_to_add):
         try:
             date = datetime.strptime(date_string, "%d.%m.%Y")
@@ -94,3 +108,12 @@ class GroupMenu:
         threading.Thread(target=group_manager.append_data, args=(group_data,)).start()
         print(f"Group {group_name} created successfully")
         return True
+
+    @log_decorator
+    def delete_group(self):
+        for group in self.show_all_group():
+            if group is False:
+                print("Group not found")
+                return False
+            print(group)
+        group_choose: int = int(input("Enter group id: "))

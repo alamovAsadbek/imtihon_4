@@ -293,7 +293,8 @@ def admin_group_menu():
             admin_group_menu()
         elif user_input == 2:
             print('\nHome -> Group -> Update group\n')
-            pass
+            admin.update_group()
+            admin_group_menu()
         elif user_input == 3:
             print('\nHome -> Group -> Delete group\n')
             pass
