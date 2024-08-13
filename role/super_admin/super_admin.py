@@ -46,3 +46,8 @@ class SuperAdmin:
     def add_student(self) -> bool:
         self.__student_menu.add_student()
         return True
+
+    @log_decorator
+    def update_student(self) -> bool:
+        self.__student_menu.update_student()
+        return True

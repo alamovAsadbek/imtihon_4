@@ -136,7 +136,7 @@ def super_admin_student_menu():
             super_admin_student_menu()
         elif user_input == 2:
             print("\nThis menu is update student \n")
-            super_admin.update_admin()
+            super_admin.update_student()
             super_admin_student_menu()
         elif user_input == 3:
             pass
