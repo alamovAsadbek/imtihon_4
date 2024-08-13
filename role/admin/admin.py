@@ -83,6 +83,10 @@ class Admin:
 
     @log_decorator
     def show_all_payment(self):
-        self.__student_group.show_all_payment()
+        for payment in self.__student_group.show_all_payment():
+            if payment is False or payment is None:
+                print("Payment not found")
+                return False
+            print(payment)
         return True
     # /payment

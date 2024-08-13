@@ -99,10 +99,10 @@ class StudentGroup:
         for payment in all_payments.values():
             get_student = user_manager.get_data(data_id=payment['student_id'])
             status = 'filled'
-            if payment['amount'] > 1:
+            if payment['amount'] < 1:
                 status = 'withdraw'
                 payment['amount'] *= -1
             yield (f"{count}. Payment ID: {payment['id']}, Student fullname: {get_student['full_name']}, "
-                   f"Student ID: {get_student['id']}, Amount: {payment['amount']}, Status: {status} "
+                   f"Student ID: {get_student['id']}, Amount: {payment['amount']} UZS, Status: {status} "
                    f"Time: {payment['create_date']}")
             count += 1
