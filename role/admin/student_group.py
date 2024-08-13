@@ -106,3 +106,26 @@ class StudentGroup:
                    f"Student ID: {get_student['id']}, Amount: {payment['amount']} UZS, Status: {status} "
                    f"Time: {payment['create_date']}")
             count += 1
+
+    @log_decorator
+    def count_balance(self, user_id: int):
+        all_balance: dict = payment_manager.read()
+        summ = 0
+        for payment in all_balance.values():
+            if payment['student_id'] == user_id:
+                summ += payment['amount']
+        return summ
+
+    @log_decorator
+    def withdraw_payment(self):
+        email_subject = "To'lov"
+        email_body = "Sizni hisobingizda 1320000 uzs yechib olindi "
+        for group in self.__group_menu.show_all_group():
+            if group is False or group is None:
+                print("Groups not found")
+                return False
+        choose_group: int = int(input("Enter group id: "))
+        get_data: dict = group_manager.get_data(data_id=choose_group)
+        if get_data is False or get_data is None:
+            print("Group not found")
+            return False
