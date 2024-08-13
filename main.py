@@ -296,7 +296,8 @@ def admin_group_menu():
             admin_group_menu()
         elif user_input == 3:
             print('\nHome -> Group -> Show all groups\n')
-            pass
+            admin.show_all_groups()
+            admin_group_menu()
         elif user_input == 4:
             show_admin_menu()
         else:
