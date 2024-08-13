@@ -7,5 +7,14 @@
         "role": "admin",
         "create_date": "2024-08-13 10:47:53",
         "is_login": false
+    },
+    "42153": {
+        "id": 42153,
+        "username": "admin_asadbek",
+        "full_name": "A'lamov Asadbek",
+        "password": "0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c",
+        "role": "admin",
+        "create_date": "2024-08-13 11:48:23",
+        "is_login": false
     }
 }
