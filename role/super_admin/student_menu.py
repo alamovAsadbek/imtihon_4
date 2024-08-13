@@ -82,5 +82,9 @@ class StudentMenu:
         }}
         threading.Thread(target=user_manager.append_data, args=(student_data,)).start()
         print("\nStudent added successfully.")
-        email_sender.send_email(to_whom='all')
+        email_subject = "Your username and password"
+        body = f'Your id: {student_id}\nUsername: {random_username}\nPassword: {random_password}'
+        threading.Thread(target=email_sender.only_send_email,
+                         kwargs={'subject': email_subject, 'body': body, 'to_email': email}).start()
+        print('Information has been sent to the student')
         return True

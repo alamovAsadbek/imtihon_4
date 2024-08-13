@@ -1,4 +1,6 @@
+import contextlib
 import datetime
+import smtplib
 
 from main_files.decorator_func import log_decorator
 from main_files.json_manager import user_manager
@@ -13,10 +15,15 @@ class EmailSender:
         self.__create_data = datetime.datetime.now().strftime('%d/%m/%Y %H:%M:%S').__str__()
         self.__receiver_emails = []
 
-    # this function allows you to login to the mail
+    # this function allows you to log in to the mail
     @log_decorator
+    @contextlib.contextmanager
     def login_email(self):
-        pass
+        server = smtplib.SMTP(self.__smtp_server, self.__port)
+        server.starttls()
+        server.login(self.__sender_email, self.__password)
+        yield server
+        server.quit()
 
     # This function sorts the mail to which mail should be sent
     @log_decorator
@@ -42,6 +49,8 @@ class EmailSender:
 
     # This function only sends messages to one mailbox
     @log_decorator
-    def only_send_email(self, email: str):
-
-        pass
+    def only_send_email(self, subject: str, body: str, to_email: str):
+        message = f'Subject: {subject}\n\n{body}'
+        with self.login_email() as server:
+            server.sendmail(self.__sender_email, to_email, message)
+        return True
