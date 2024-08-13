@@ -85,9 +85,9 @@ class JsonManager:
     @log_decorator
     def delete_data(self, data_id: int) -> bool:
         all_data: dict = self.read()
-        for index, data in enumerate(all_data.values()):
-            if data['id'].__str__() == data_id.__str__():
-                del all_data[data_id]
+        for index, data in enumerate(all_data.keys()):
+            if data_id.__str__() == data:
+                del all_data[data]
                 threading.Thread(target=self.write, args=(all_data,)).start()
                 return True
         return False

@@ -96,9 +96,13 @@ def super_admin_admin_menu():
             super_admin.update_admin()
             super_admin_admin_menu()
         elif user_input == 3:
-            pass
+            print("\nThis menu is delete admin menu\n")
+            super_admin.delete_admin()
+            super_admin_admin_menu()
         elif user_input == 4:
-            pass
+            print("\nThis menu is show all admin menu\n")
+            super_admin.show_all_admins()
+            super_admin_admin_menu()
         elif user_input == 5:
             show_super_admin_menu()
         else:
