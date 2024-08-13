@@ -126,13 +126,17 @@ def super_admin_email_menu():
     '''
     print(text)
     try:
+        super_admin = SuperAdmin()
         choice = int(input('Choose menu: '))
         if choice == 1:
-            pass
+            super_admin.send_all()
+            super_admin_email_menu()
         elif choice == 2:
-            pass
+            super_admin.send_male()
+            super_admin_email_menu()
         elif choice == 3:
-            pass
+            super_admin.send_female()
+            super_admin_email_menu()
         elif choice == 4:
             show_super_admin_menu()
         else:

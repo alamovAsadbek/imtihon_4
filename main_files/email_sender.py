@@ -43,9 +43,16 @@ class EmailSender:
 
     # This function sends a message
     @log_decorator
-    def send_email(self, to_whom: str):
+    def send_email(self, to_whom: str, subject: str, body: str) -> bool:
         self.filter_receiver_emails(to_whom)
-        print(self.__receiver_emails)
+        email = f'Subject: {subject}\n\n{body}'
+        if len(self.__receiver_emails) == 0:
+            print('No receiver emails found')
+            return False
+        with self.login_email() as server:
+            for receiver_email in self.__receiver_emails:
+                server.sendmail(self.__sender_email, receiver_email, email)
+        return True
 
     # This function only sends messages to one mailbox
     @log_decorator
