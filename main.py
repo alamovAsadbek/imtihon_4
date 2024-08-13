@@ -302,6 +302,8 @@ def payment_menu():
         user_input = int(input('Choose menu: '))
         if user_input == 1:
             print('\nHome -> Payment -> Show all\n')
+            admin.show_all_payment()
+            payment_menu()
         elif user_input == 2:
             print('\nHome -> Payment -> Payment\n')
             admin.payment_student()

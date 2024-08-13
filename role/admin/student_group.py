@@ -94,4 +94,15 @@ class StudentGroup:
 
     @log_decorator
     def show_all_payment(self):
-        pass
+        all_payments: dict = payment_manager.read()
+        count = 1
+        for payment in all_payments.values():
+            get_student = user_manager.get_data(data_id=payment['student_id'])
+            status = 'filled'
+            if payment['amount'] > 1:
+                status = 'withdraw'
+                payment['amount'] *= -1
+            yield (f"{count}. Payment ID: {payment['id']}, Student fullname: {get_student['full_name']}, "
+                   f"Student ID: {get_student['id']}, Amount: {payment['amount']}, Status: {status} "
+                   f"Time: {payment['create_date']}")
+            count += 1

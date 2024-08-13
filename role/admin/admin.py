@@ -80,4 +80,9 @@ class Admin:
     def payment_student(self) -> bool:
         self.__student_group.student_payment()
         return True
+
+    @log_decorator
+    def show_all_payment(self):
+        self.__student_group.show_all_payment()
+        return True
     # /payment
