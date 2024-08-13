@@ -124,8 +124,9 @@ class StudentMenu:
         print('\nInformation has been sent to the student\n')
         return True
 
+    # this function is update student
     @log_decorator
-    def update_student(self):
+    def update_student(self) -> bool:
         for student in self.show_all_students():
             if student is None or student is False:
                 print("Students not found")
@@ -147,8 +148,9 @@ class StudentMenu:
         print("Student update failed.")
         return False
 
+    # this function is delete student
     @log_decorator
-    def delete_student(self):
+    def delete_student(self) -> bool:
         for student in self.show_all_students():
             if student is None and student is False:
                 print("Student is not found")

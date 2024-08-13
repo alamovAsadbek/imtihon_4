@@ -59,7 +59,7 @@ def show_super_admin_menu():
         elif user_input == 2:
             super_admin_student_menu()
         elif user_input == 3:
-            pass
+            super_admin_email_menu()
         elif user_input == 4:
             auth.logout()
             show_auth()
@@ -114,6 +114,36 @@ def super_admin_admin_menu():
     except Exception as e:
         print(f'Error: {e}')
         super_admin_admin_menu()
+
+
+@log_decorator
+def super_admin_email_menu():
+    text = '''
+1. All student
+2. Only male
+3. Only female
+4. Back
+    '''
+    print(text)
+    try:
+        choice = int(input('Choose menu: '))
+        if choice == 1:
+            pass
+        elif choice == 2:
+            pass
+        elif choice == 3:
+            pass
+        elif choice == 4:
+            show_super_admin_menu()
+        else:
+            print('Wrong input')
+            super_admin_email_menu()
+    except ValueError:
+        print("Invalid input")
+        super_admin_email_menu()
+    except Exception as e:
+        print(f'Error: {e}')
+        super_admin_email_menu()
 
 
 # student section belonging to super admin
