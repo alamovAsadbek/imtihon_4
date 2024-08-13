@@ -26,7 +26,8 @@ class Admin:
 
     @log_decorator
     def show_all_groups(self) -> bool:
-        self.__group_menu.show_all_group()
+        for group in self.__group_menu.show_all_group():
+            print(group)
         return True
 
     # /group

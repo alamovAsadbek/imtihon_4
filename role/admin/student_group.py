@@ -13,12 +13,14 @@ class StudentGroup:
 
     @log_decorator
     def add_student_to_group(self) -> bool:
+        print("Choose group: ")
         for group in self.__group_menu.show_all_group():
             if group is False:
                 print("Group not found")
                 return False
             print(group)
         choose_group: int = int(input("\nEnter group id: "))
+        print("\n Choose student: ")
         if not group_manager.check_data_by_key(key='id', value=choose_group):
             print("Group not found")
             return False
@@ -32,7 +34,7 @@ class StudentGroup:
         if get_student is None or get_student is False or get_student['role'] != 'student':
             print("Student not found")
             return False
-        get_group: dict = group_manager.get_data(group_id=choose_group)
+        get_group: dict = group_manager.get_data(data_id=choose_group)
         get_group['students'].append(get_student['id'])
         group_data = {f'{get_group["id"]}': get_group}
         threading.Thread(target=group_manager.append_data, args=(group_data,)).start()
