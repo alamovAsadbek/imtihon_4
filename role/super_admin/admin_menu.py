@@ -25,7 +25,8 @@ class AdminMenu:
         for admin in all_admins.values():
             if admin['role'] == 'admin':
                 print(f"{count}. ID: {admin['id']}, Fullname: {admin['full_name']}, Username: {admin['username']}, "
-                      f"Role: {admin['role']}, Created: {admin['create_date']}")
+                      f"Age: {admin['age']}, Gender: {admin['gender']}, Role: {admin['role']}, "
+                      f"Created: {admin['create_date']}")
                 count += 1
         if count == 1:
             print("Admin not found.")
@@ -37,6 +38,7 @@ class AdminMenu:
     def add_new_admin(self, out_data: dict = None) -> bool:
         full_name = input('Full name: ').strip()
         username = input('Username: ').strip()
+        age: int = int(input('Age: ').strip())
         while True:
             if out_data is not None and out_data['username'] == username:
                 break
@@ -45,6 +47,22 @@ class AdminMenu:
                 username = input('Username: ').strip()
                 continue
             break
+        while True:
+            global gender
+            print("Choose gender:")
+            print(f'1. Male \t 2. Female')
+            user_choice: int = int(input('Enter your choice: ').strip())
+            if user_choice < 1 or user_choice > 2:
+                print('Invalid choice. Please try again.')
+                continue
+            elif user_choice == 1:
+                gender = 'male'
+                break
+            elif user_choice == 2:
+                gender = 'female'
+                break
+            else:
+                print('Invalid choice. Please try again.')
         while True:
             password = hashlib.sha256(input('Password: ').strip().encode('utf-8')).hexdigest()
             confirm_password = hashlib.sha256(input('Confirm password: ').strip().encode('utf-8')).hexdigest()
@@ -62,6 +80,10 @@ class AdminMenu:
             'password': password,
             'role': 'admin',
             'create_date': self.__create_data,
+            "age": age,
+            "gender": gender,
+            "phone_number": False,
+            "email": False,
             'is_login': False
         }}
         threading.Thread(target=user_manager.append_data, args=(data,)).start()

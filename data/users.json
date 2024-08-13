@@ -6,6 +6,10 @@
         "password": "0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c",
         "role": "admin",
         "create_date": "2024-08-13 10:47:53",
+        "age": 20,
+        "gender": "male",
+        "phone_number": false,
+        "email": false,
         "is_login": false
     },
     "42153": {
@@ -15,6 +19,23 @@
         "password": "0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c",
         "role": "admin",
         "create_date": "2024-08-13 11:48:23",
+        "age": 20,
+        "gender": "male",
+        "phone_number": false,
+        "email": false,
+        "is_login": false
+    },
+    "94700": {
+        "id": 94700,
+        "username": "alamov_asadbek",
+        "full_name": "Asadbek",
+        "password": "0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c",
+        "role": "admin",
+        "create_date": "2024-08-13 12:02:47",
+        "age": 20,
+        "gender": "male",
+        "phone_number": false,
+        "email": false,
         "is_login": false
     }
 }
