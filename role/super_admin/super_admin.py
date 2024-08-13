@@ -1,7 +1,7 @@
 import datetime
 
 from main_files.decorator_func import log_decorator
-from role.super_admin.admin import Admin
+from role.super_admin.admin_menu import AdminMenu
 
 
 class SuperAdmin:
@@ -9,7 +9,7 @@ class SuperAdmin:
         self.__create_data = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S').__str__()
         self.__admin_username = 'admin'
         self.__admin_password = 'admin'
-        self.admin_menu = Admin()
+        self.admin_menu = AdminMenu()
 
     # admin menu
 

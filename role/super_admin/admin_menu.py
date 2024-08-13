@@ -6,7 +6,7 @@ from main_files.decorator_func import log_decorator
 from main_files.json_manager import user_manager
 
 
-class Admin:
+class AdminMenu:
     def __init__(self):
         self.__create_data = datetime.now().strftime('%Y-%m-%d %H:%M:%S').__str__()
         self.__admin_username = 'admin'
