@@ -89,4 +89,9 @@ class Admin:
                 return False
             print(payment)
         return True
+
+    @log_decorator
+    def withdraw_payment_group(self):
+        self.__student_group.withdraw_payment_group()
+        return True
     # /payment

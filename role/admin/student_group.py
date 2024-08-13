@@ -2,6 +2,7 @@ import threading
 from datetime import datetime
 
 from main_files.decorator_func import log_decorator
+from main_files.email_sender import EmailSender
 from main_files.json_manager import group_manager, user_manager, payment_manager
 from role.admin.group_menu import GroupMenu
 from role.super_admin.student_menu import StudentMenu
@@ -11,6 +12,8 @@ class StudentGroup:
     def __init__(self):
         self.__student_menu = StudentMenu()
         self.__group_menu = GroupMenu()
+        self.__email_sender = EmailSender()
+        self.__created_data = datetime.now().strftime("%d/%m/%Y %H:%M:%S").__str__()
 
     @log_decorator
     def add_student_to_group(self) -> bool:
@@ -117,9 +120,9 @@ class StudentGroup:
         return summ
 
     @log_decorator
-    def withdraw_payment(self):
-        email_subject = "To'lov"
-        email_body = "Sizni hisobingizda 1320000 uzs yechib olindi "
+    def withdraw_payment_group(self):
+        email_subject = "Payment"
+        email_body = "1320000 uzs have been withdrawn from your account"
         for group in self.__group_menu.show_all_group():
             if group is False or group is None:
                 print("Groups not found")
@@ -129,3 +132,19 @@ class StudentGroup:
         if get_data is False or get_data is None:
             print("Group not found")
             return False
+        for pay_data in get_data['students']:
+            student_balance = self.count_balance(user_id=pay_data)
+            data_id = payment_manager.random_id()
+            data = {f"{data_id}": {
+                "id": data_id,
+                "amount": -1320000,
+                "student_id": pay_data,
+                "create_date": self.__created_data
+            }}
+            if student_balance >= 1320000:
+                threading.Thread(target=payment_manager.append_data, args=(data,)).start()
+            else:
+                email_body = 'You do not have enough money for the course, please top up your account'
+            threading.Thread(target=self.__email_sender.send_email, args=('all', email_subject, email_body)).start()
+            print("Finished")
+            return True

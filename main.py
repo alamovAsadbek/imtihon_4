@@ -310,7 +310,8 @@ def payment_menu():
             payment_menu()
         elif user_input == 3:
             print('\nHome -> Payment -> Withdraw\n')
-
+            admin.withdraw_payment_group()
+            payment_menu()
         elif user_input == 4:
             show_admin_menu()
     except ValueError:
