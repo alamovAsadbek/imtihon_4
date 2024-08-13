@@ -5,6 +5,7 @@ from main_files.decorator_func import log_decorator
 from main_files.email_sender import EmailSender
 from role.super_admin.admin_menu import AdminMenu
 from role.super_admin.student_menu import StudentMenu
+from role.super_admin.teacher_menu import TeacherMenu
 
 
 class SuperAdmin:
@@ -15,6 +16,7 @@ class SuperAdmin:
         self.__admin_menu = AdminMenu()
         self.__student_menu = StudentMenu()
         self.__email_sender = EmailSender()
+        self.__teacher_menu = TeacherMenu()
 
     # admin menu
 
@@ -69,6 +71,29 @@ class SuperAdmin:
         return True
 
     # /student
+
+    # teacher
+    @log_decorator
+    def create_teacher(self) -> bool:
+        self.__teacher_menu.add_new_teacher()
+        return True
+
+    @log_decorator
+    def update_teacher(self) -> bool:
+        self.__teacher_menu.update_teacher()
+        return True
+
+    @log_decorator
+    def delete_teacher(self) -> bool:
+        self.__teacher_menu.delete_taecher()
+        return True
+
+    @log_decorator
+    def show_all_teachers(self) -> bool:
+        self.__teacher_menu.show_all_teacher()
+        return True
+
+    # /teacher
 
     # send message
     @log_decorator

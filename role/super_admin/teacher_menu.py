@@ -12,30 +12,31 @@ class TeacherMenu:
         self.__admin_username = 'admin'
         self.__admin_password = 'admin'
 
-    # admin menu
+    # teacher menu
 
-    # show all admins
+    # show all teachers
     @log_decorator
-    def show_all_admins(self) -> bool:
-        all_admins: dict = user_manager.read()
+    def show_all_teacher(self) -> bool:
+        all_teacher: dict = user_manager.read()
         count = 1
-        if len(all_admins) == 0:
-            print('No admins found.')
+        if len(all_teacher) == 0:
+            print('No teachers found.')
             return False
-        for admin in all_admins.values():
-            if admin['role'] == 'admin':
-                print(f"{count}. ID: {admin['id']}, Fullname: {admin['full_name']}, Username: {admin['username']}, "
-                      f"Age: {admin['age']}, Gender: {admin['gender']}, Role: {admin['role']}, "
-                      f"Created: {admin['create_date']}")
+        for teacher in all_teacher.values():
+            if teacher['teacher'] == 'teacher':
+                print(
+                    f"{count}. ID: {teacher['id']}, Fullname: {teacher['full_name']}, Username: {teacher['username']}, "
+                    f"Age: {teacher['age']}, Gender: {teacher['gender']}, Role: {teacher['role']}, "
+                    f"Created: {teacher['create_date']}")
                 count += 1
         if count == 1:
-            print("Admin not found.")
+            print("Teacher not found.")
             return False
         return True
 
-    # add new admin
+    # add new teacher
     @log_decorator
-    def add_new_admin(self, out_data: dict = None) -> bool:
+    def add_new_teacher(self, out_data: dict = None) -> bool:
         full_name = input('Full name: ').strip()
         username = input('Username: ').strip()
         age: int = int(input('Age: ').strip())
@@ -78,7 +79,7 @@ class TeacherMenu:
             'username': username,
             'full_name': full_name,
             'password': password,
-            'role': 'admin',
+            'role': 'teacher',
             'create_date': self.__create_data,
             "age": age,
             "gender": gender,
@@ -89,36 +90,36 @@ class TeacherMenu:
         }}
         threading.Thread(target=user_manager.append_data, args=(data,)).start()
         if out_data is None:
-            print('Admin added successfully.')
+            print('Teacher added successfully.')
         return True
 
-    # update admin
+    # update teacher
     @log_decorator
-    def update_admin(self) -> bool:
-        if not self.show_all_admins():
+    def update_teacher(self) -> bool:
+        if not self.show_all_teacher():
             return False
-        choose_admin = int(input('\nEnter admin id:  ').strip())
-        get_admin = user_manager.get_data(data_id=choose_admin)
-        if get_admin is False:
-            print('No admin found.')
+        choose_teacher = int(input('\nEnter teacher id:  ').strip())
+        get_teacher = user_manager.get_data(data_id=choose_teacher)
+        if get_teacher is False:
+            print('No teacher found.')
             return False
-        print(f'\nID: {get_admin["id"]}\nFullname: {get_admin["full_name"]}\n'
-              f'Username: {get_admin["username"]}\n')
-        if self.add_new_admin(out_data=get_admin):
-            print('Admin successfully updated.')
+        print(f'\nID: {get_teacher["id"]}\nFullname: {get_teacher["full_name"]}\n'
+              f'Username: {get_teacher["username"]}\n')
+        if self.add_new_teacher(out_data=get_teacher):
+            print('Teacher successfully updated.')
             return True
         print("Something went wrong. Please try again.")
         return False
 
-    # delete admin by admin id
+    # delete teacher by admin id
     @log_decorator
-    def delete_admin(self) -> bool:
-        if not self.show_all_admins():
+    def delete_taecher(self) -> bool:
+        if not self.show_all_teacher():
             return False
-        admin_id = int(input('\nEnter admin id: ').strip())
-        if user_manager.delete_data(data_id=admin_id):
-            print('Admin successfully deleted.')
+        teacher_id = int(input('\nEnter teacher id: ').strip())
+        if user_manager.delete_data(data_id=teacher_id):
+            print('Teacher successfully deleted.')
             return True
         print("Something went wrong. Please try again.")
         return False
-    # /admin menu
+    # /taecher menu

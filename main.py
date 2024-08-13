@@ -48,8 +48,9 @@ def show_super_admin_menu():
     text = '''
 1. Admin
 2. Student 
-3. Send message
-4. Logout
+3. Teacher
+4. Send message
+5. Logout
     '''
     print(text)
     try:
@@ -61,9 +62,12 @@ def show_super_admin_menu():
             print('\nHome -> Student\n')
             super_admin_student_menu()
         elif user_input == 3:
+            print('\nHome -> Teacher\n')
+            super_admin_teacher_menu()
+        elif user_input == 4:
             print('\nHome -> Message\n')
             super_admin_email_menu()
-        elif user_input == 4:
+        elif user_input == 5:
             print("Logout successful")
             auth.logout()
             show_auth()
@@ -118,6 +122,45 @@ def super_admin_admin_menu():
     except Exception as e:
         print(f'Error: {e}')
         super_admin_admin_menu()
+
+
+@log_decorator
+def super_admin_teacher_menu():
+    text = '''
+1. Add new teacher
+2. Update teacher
+3. Delete teacher
+4. Show all teachers
+5. Back
+    '''
+    print(text)
+    try:
+        super_admin = SuperAdmin()
+        choose_teacher = int(input('Choose menu: '))
+        if choose_teacher == 1:
+            print('\nHome -> Teacher -> Create\n')
+            super_admin.create_teacher()
+            super_admin_teacher_menu()
+        elif choose_teacher == 2:
+            print('\nHome -> Teacher -> Update\n')
+            super_admin.update_teacher()
+            super_admin_teacher_menu()
+        elif choose_teacher == 3:
+            print('\nHome -> Teacher -> Delete\n')
+            super_admin.delete_teacher()
+            super_admin_teacher_menu()
+        elif choose_teacher == 4:
+            print('\nHome -> Teacher -> Show all teachers\n')
+            super_admin.show_all_teachers()
+            super_admin_teacher_menu()
+        elif choose_teacher == 5:
+            show_super_admin_menu()
+    except ValueError:
+        print("Invalid input")
+        super_admin_teacher_menu()
+    except Exception as e:
+        print(f'Error: {e}')
+        super_admin_teacher_menu()
 
 
 @log_decorator

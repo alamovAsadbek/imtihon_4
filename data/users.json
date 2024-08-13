@@ -54,5 +54,19 @@
         "email": "alamovasad55@gmail.com",
         "xp": 0,
         "is_login": false
+    },
+    "66139": {
+        "id": 66139,
+        "username": "teacher_asadbek",
+        "full_name": "A'lamov Asadbek",
+        "password": "0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c",
+        "role": "teacher",
+        "create_date": "2024-08-13 22:51:47",
+        "age": 25,
+        "gender": "male",
+        "phone_number": false,
+        "email": false,
+        "xp": 0,
+        "is_login": false
     }
 }
