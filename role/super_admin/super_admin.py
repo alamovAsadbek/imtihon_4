@@ -51,3 +51,14 @@ class SuperAdmin:
     def update_student(self) -> bool:
         self.__student_menu.update_student()
         return True
+
+    @log_decorator
+    def delete_student(self) -> bool:
+        self.__student_menu.delete_student()
+        return True
+
+    @log_decorator
+    def show_all_students(self):
+        pass
+        # self.__student_menu.show_all_students()
+        # return True

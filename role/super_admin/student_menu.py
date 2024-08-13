@@ -150,7 +150,8 @@ class StudentMenu:
     @log_decorator
     def delete_student(self):
         for student in self.show_all_students():
-            if student is not None and student is not False:
+            if student is None and student is False:
+                print("Student is not found")
                 return False
             print(student)
         choose_student = int(input('\nChoose student id: '))
@@ -158,4 +159,6 @@ class StudentMenu:
         if result_get is False or result_get['role'] != 'student':
             print("Student not found")
             return False
-
+        threading.Thread(target=user_manager.delete_data, args=(result_get['id'],)).start()
+        print("\nStudent deleted successfully.")
+        return True

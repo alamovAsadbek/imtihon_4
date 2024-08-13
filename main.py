@@ -139,9 +139,11 @@ def super_admin_student_menu():
             super_admin.update_student()
             super_admin_student_menu()
         elif user_input == 3:
-            pass
+            super_admin.delete_student()
+            super_admin_student_menu()
         elif user_input == 4:
-            pass
+            super_admin.show_all_students()
+            super_admin_student_menu()
         elif user_input == 5:
             show_super_admin_menu()
     except ValueError:
