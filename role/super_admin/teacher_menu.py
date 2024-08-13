@@ -23,7 +23,7 @@ class TeacherMenu:
             print('No teachers found.')
             return False
         for teacher in all_teacher.values():
-            if teacher['teacher'] == 'teacher':
+            if teacher['role'] == 'teacher':
                 print(
                     f"{count}. ID: {teacher['id']}, Fullname: {teacher['full_name']}, Username: {teacher['username']}, "
                     f"Age: {teacher['age']}, Gender: {teacher['gender']}, Role: {teacher['role']}, "

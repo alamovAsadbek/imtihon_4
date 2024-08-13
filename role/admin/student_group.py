@@ -91,3 +91,7 @@ class StudentGroup:
         threading.Thread(target=payment_manager.append_data, args=(data,)).start()
         print("Payment submit")
         return True
+
+    @log_decorator
+    def show_all_payment(self):
+        pass

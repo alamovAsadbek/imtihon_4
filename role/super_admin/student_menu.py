@@ -56,7 +56,7 @@ class StudentMenu:
             email: str = input('Email: ').strip()
             if update_date is not None and email == update_date['email']:
                 break
-            elif not user_manager.is_email_valid(email=email):
+            elif not user_manager.is_valid_email_format(email=email):
                 print("Email validation failed, please try again.")
                 print("Example: email@gmail.com")
                 continue

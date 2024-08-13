@@ -272,8 +272,7 @@ def show_admin_menu():
             show_admin_menu()
         elif user_input == 5:
             print('\nHome -> Payment\n')
-            admin.payment_student()
-            show_admin_menu()
+            payment_menu()
         elif user_input == 6:
             print("Logout successful")
             auth.logout()
@@ -287,6 +286,37 @@ def show_admin_menu():
     except Exception as e:
         print(f'Error: {e}')
         show_admin_menu()
+
+
+@log_decorator
+def payment_menu():
+    text = '''
+1. Show all payments
+2. Payment
+3. Withdraw money
+4. Back
+    '''
+    print(text)
+    try:
+        admin = Admin()
+        user_input = int(input('Choose menu: '))
+        if user_input == 1:
+            print('\nHome -> Payment -> Show all\n')
+        elif user_input == 2:
+            print('\nHome -> Payment -> Payment\n')
+            admin.payment_student()
+            payment_menu()
+        elif user_input == 3:
+            print('\nHome -> Payment -> Withdraw\n')
+
+        elif user_input == 4:
+            show_admin_menu()
+    except ValueError:
+        print("Invalid input")
+        payment_menu()
+    except Exception as e:
+        print(f'Error: {e}')
+        payment_menu()
 
 
 # A function related to groups in the Admin menu
