@@ -19,4 +19,9 @@ class Admin:
     def delete_group(self) -> bool:
         self.__group_menu.delete_group()
         return True
+
+    @log_decorator
+    def show_all_groups(self) -> bool:
+        self.__group_menu.show_all_group()
+        return True
     # /group

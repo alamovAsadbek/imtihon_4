@@ -278,10 +278,9 @@ def show_admin_menu():
 def admin_group_menu():
     text = '''
 1. Create Group
-2. Update Group
-3. Delete Group
-4. Show all groups
-5. Back
+2. Delete Group
+3. Show all groups
+4. Back
     '''
     print(text)
     try:
@@ -292,17 +291,17 @@ def admin_group_menu():
             admin.create_group()
             admin_group_menu()
         elif user_input == 2:
-            print('\nHome -> Group -> Update group\n')
-            admin.update_group()
+            print('\nHome -> Group -> Delete group\n')
+            admin.delete_group()
             admin_group_menu()
         elif user_input == 3:
-            print('\nHome -> Group -> Delete group\n')
-            pass
-        elif user_input == 4:
             print('\nHome -> Group -> Show all groups\n')
             pass
-        elif user_input == 5:
+        elif user_input == 4:
             show_admin_menu()
+        else:
+            print('Wrong input')
+            admin_group_menu()
     except ValueError:
         print("Invalid input")
         admin_group_menu()

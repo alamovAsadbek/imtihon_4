@@ -57,7 +57,7 @@ class GroupMenu:
             return False
 
     @log_decorator
-    def create_group(self):
+    def create_group(self) -> bool:
         group_name = input("Enter a group name: ").strip()
         while True:
             if group_manager.check_data_by_key(key='name', value=group_name):
@@ -110,10 +110,15 @@ class GroupMenu:
         return True
 
     @log_decorator
-    def delete_group(self):
+    def delete_group(self) -> bool:
         for group in self.show_all_group():
             if group is False:
                 print("Group not found")
                 return False
             print(group)
         group_choose: int = int(input("Enter group id: "))
+        if group_manager.delete_data(data_id=group_choose):
+            print(f"Group deleted successfully")
+            return True
+        print("Group not found")
+        return False
