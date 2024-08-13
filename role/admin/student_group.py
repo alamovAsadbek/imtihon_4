@@ -52,17 +52,17 @@ class StudentGroup:
         return True
 
     @log_decorator
-    def search_student(self) -> bool:
+    def search_student(self) -> bool or str:
         all_students: dict = user_manager.read()
         count = 1
         key_word = input("Search: ").strip().lower()
         for student in all_students.values():
             if student['role'] == 'student':
                 if key_word in student['full_name'].lower() or key_word in student['username']:
-                    yield f"{count}. ID: {student['id']}, Fullname: {student['full_name']}, Username: {student['username']}, "
-                    f"Age: {student['age']}, Email: {student['email']}, Phone number: {student['phone_number']}, "
-                    f"Gender: {student['gender']}, Role: {student['role']}, XP: {student['xp']} "
-                    f"Created: {student['create_date']}"
+                    yield (f"{count}. ID: {student['id']}, Fullname: {student['full_name']}, "
+                           f" Username: {student['username']}, Age: {student['age']}, Email: {student['email']}, "
+                           f"Gender: {student['gender']}, Role: {student['role']}, XP: {student['xp']} "
+                           f"Phone number: {student['phone_number']},  Created: {student['create_date']}")
                     count += 1
         if count == 1:
             print("No students found.")
