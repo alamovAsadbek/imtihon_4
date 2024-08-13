@@ -127,6 +127,7 @@ class StudentGroup:
             if group is False or group is None:
                 print("Groups not found")
                 return False
+            print(group)
         choose_group: int = int(input("Enter group id: "))
         get_data: dict = group_manager.get_data(data_id=choose_group)
         if get_data is False or get_data is None:

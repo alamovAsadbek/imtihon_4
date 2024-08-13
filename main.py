@@ -293,8 +293,9 @@ def payment_menu():
     text = '''
 1. Show all payments
 2. Payment
-3. Withdraw money
-4. Back
+3. Withdraw money group
+4. Withdraw money student
+5. Back
     '''
     print(text)
     try:
@@ -309,10 +310,14 @@ def payment_menu():
             admin.payment_student()
             payment_menu()
         elif user_input == 3:
-            print('\nHome -> Payment -> Withdraw\n')
+            print('\nHome -> Payment -> Withdraw group\n')
             admin.withdraw_payment_group()
             payment_menu()
         elif user_input == 4:
+            print('\nHome -> Payment -> Withdraw student\n')
+            admin.withdraw_payment_student()
+            payment_menu()
+        elif user_input == 5:
             show_admin_menu()
     except ValueError:
         print("Invalid input")
