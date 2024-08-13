@@ -83,12 +83,12 @@ class JsonManager:
         return False
 
     @log_decorator
-    def is_valid_email_format(self, email):
+    def is_valid_email_format(self, email: str):
         pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
         return re.match(pattern, email) is not None
 
     @log_decorator
-    def check_data_by_key(self, key: str, value: str) -> bool:
+    def check_data_by_key(self, key: str, value: any) -> bool:
         all_users: dict = self.read()
         for user in all_users.values():
             if user[key] == value:

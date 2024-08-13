@@ -1,13 +1,22 @@
+import hashlib
 import random
 import re
+import threading
+from datetime import datetime
 
 from main_files.decorator_func import log_decorator
+from main_files.email_sender import EmailSender
 from main_files.json_manager import user_manager
 
 
 class StudentMenu:
+    def __init__(self):
+        self.__admin_email = 'alamovasad@gmail.com'
+        self.__created_data = datetime.now().strftime("%d/%m/%Y %H:%M:%S").__str__()
+
     @log_decorator
     def add_student(self):
+        email_sender = EmailSender()
         fullname: str = input('Full name: ').strip()
         while len(fullname) < 3:
             print('Full name must be at least 3 characters.')
@@ -25,7 +34,7 @@ class StudentMenu:
             print("Email validation failed, please try again.")
             print("Example: email@gmail.com")
             email: str = input('Email: ').strip()
-        while user_manager.check_data_by_key(key='email', value=email):
+        while user_manager.check_data_by_key(key='email', value=email) or email == self.__admin_email:
             print("This email is already in use.")
             email: str = input('Email: ').strip()
         age: int = int(input('Age: ').strip())
@@ -53,8 +62,25 @@ class StudentMenu:
             print("This phone number is already in use.")
             phone_number: str = input('Phone number (+998): ').strip()
         random_password: int = random.randint(100000, 999999)
-        student_id = user_manager.random_id()
+        student_id: int = user_manager.random_id()
         print(f"\nID: {student_id}\nUsername: {random_username}\nFull name: {fullname}\nEmail: {email}\n"
               f"Gender: {gender}\nPhone number: {phone_number}\nAge: {age}\nPassword: {random_password}")
         print(f"\nusername: {random_username}\npassword: {random_password}")
+        student_data = {f'{student_id}': {
+            "id": student_id,
+            "username": random_username,
+            "full_name": fullname,
+            "password": hashlib.sha256(str(random_password).encode('utf-8')).hexdigest(),
+            "role": "student",
+            "create_date": self.__created_data,
+            "age": age,
+            "gender": gender,
+            "phone_number": phone_number,
+            "email": email,
+            "xp": 0,
+            "is_login": False
+        }}
+        threading.Thread(target=user_manager.append_data, args=(student_data,)).start()
+        print("\nStudent added successfully.")
+        email_sender.send_email(to_whom='all')
         return True

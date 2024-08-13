@@ -40,5 +40,33 @@
         "email": false,
         "xp": 0,
         "is_login": false
+    },
+    "73857": {
+        "id": 73857,
+        "username": "student_alamov_1861",
+        "full_name": "A'lamov Asadbek",
+        "password": "09dffc034e4e9073adce010cb8985f0a8765b5ca48dde866544c537bf94e3d0b",
+        "role": "student",
+        "create_date": "13/08/2024 15:52:03",
+        "age": 20,
+        "gender": "female",
+        "phone_number": "990690140",
+        "email": "alamovasad55@gmail.com",
+        "xp": 0,
+        "is_login": false
+    },
+    "18287": {
+        "id": 18287,
+        "username": "student_alamov_4200",
+        "full_name": "A'lamov Asadbek",
+        "password": "5d5f32806aaf91a0a4030ca051a17d1263577a681c8b8fa78a8f36e696f38ee2",
+        "role": "student",
+        "create_date": "13/08/2024 15:53:44",
+        "age": 20,
+        "gender": "male",
+        "phone_number": "990690143",
+        "email": "alamovasad69@gmail.com",
+        "xp": 0,
+        "is_login": false
     }
 }
