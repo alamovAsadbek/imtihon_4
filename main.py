@@ -55,12 +55,16 @@ def show_super_admin_menu():
     try:
         user_input = int(input('Choose menu: '))
         if user_input == 1:
+            print('\nHome -> Admin\n')
             super_admin_admin_menu()
         elif user_input == 2:
+            print('\nHome -> Student\n')
             super_admin_student_menu()
         elif user_input == 3:
+            print('\nHome -> Message\n')
             super_admin_email_menu()
         elif user_input == 4:
+            print("Logout successful")
             auth.logout()
             show_auth()
         else:
@@ -88,19 +92,19 @@ def super_admin_admin_menu():
         super_admin = SuperAdmin()
         user_input = int(input('Choose menu: '))
         if user_input == 1:
-            print("\nThis menu is add admin menu\n")
+            print('\nHome -> Admin -> Add admin\n')
             super_admin.add_new_admin()
             super_admin_admin_menu()
         elif user_input == 2:
-            print("\nThis menu is update admin menu\n")
+            print('\nHome -> Admin -> Update admin\n')
             super_admin.update_admin()
             super_admin_admin_menu()
         elif user_input == 3:
-            print("\nThis menu is delete admin menu\n")
+            print('\nHome -> Admin -> Delete admin\n')
             super_admin.delete_admin()
             super_admin_admin_menu()
         elif user_input == 4:
-            print("\nThis menu is show all admin menu\n")
+            print('\nHome -> Admin -> Show all admins\n')
             super_admin.show_all_admins()
             super_admin_admin_menu()
         elif user_input == 5:
@@ -129,12 +133,15 @@ def super_admin_email_menu():
         super_admin = SuperAdmin()
         choice = int(input('Choose menu: '))
         if choice == 1:
+            print('\nHome -> Message -> All student\n')
             super_admin.send_all()
             super_admin_email_menu()
         elif choice == 2:
+            print('\nHome -> Message -> Only male\n')
             super_admin.send_male()
             super_admin_email_menu()
         elif choice == 3:
+            print('\nHome -> Message -> Only female\n')
             super_admin.send_female()
             super_admin_email_menu()
         elif choice == 4:
@@ -165,17 +172,19 @@ def super_admin_student_menu():
         super_admin = SuperAdmin()
         user_input = int(input('Choose menu: '))
         if user_input == 1:
-            print(f'\nThis menu is create student \n')
+            print('\nHome -> Student -> Create student\n')
             super_admin.add_student()
             super_admin_student_menu()
         elif user_input == 2:
-            print("\nThis menu is update student \n")
+            print('\nHome -> Student -> Update student\n')
             super_admin.update_student()
             super_admin_student_menu()
         elif user_input == 3:
+            print('\nHome -> Student -> Delete student\n')
             super_admin.delete_student()
             super_admin_student_menu()
         elif user_input == 4:
+            print('\nHome -> Student -> Show all students\n')
             super_admin.show_all_students()
             super_admin_student_menu()
         elif user_input == 5:
@@ -200,10 +209,13 @@ def show_admin_menu():
     try:
         user_input = int(input('Choose menu: '))
         if user_input == 1:
+            print('\nHome -> Group\n')
             admin_student_menu()
         elif user_input == 2:
+            print('\nHome -> Student\n')
             admin_group_menu()
         elif user_input == 3:
+            print("Logout successful")
             auth.logout()
             show_auth()
         else:
@@ -222,21 +234,25 @@ def show_admin_menu():
 def admin_group_menu():
     text = '''
 1. Create Group
-2. Show all groups
+2. Update Group
 3. Delete Group
-4. Update Group
+4. Show all groups
 5. Back
     '''
     print(text)
     try:
         user_input = int(input('Choose menu: '))
         if user_input == 1:
+            print('\nHome -> Group -> Create group\n')
             pass
         elif user_input == 2:
+            print('\nHome -> Group -> Update group\n')
             pass
         elif user_input == 3:
+            print('\nHome -> Group -> Delete group\n')
             pass
         elif user_input == 4:
+            print('\nHome -> Group -> Show all groups\n')
             pass
         elif user_input == 5:
             show_admin_menu()
@@ -262,12 +278,16 @@ def admin_student_menu():
     try:
         user_input = int(input('Choose menu: '))
         if user_input == 1:
+            print('\nHome -> Student -> Create student\n')
             pass
         elif user_input == 2:
+            print('\nHome -> Student -> Update student\n')
             pass
         elif user_input == 3:
+            print('\nHome -> Student -> Delete student\n')
             pass
         elif user_input == 4:
+            print('\nHome -> Student -> Show all students\n')
             pass
         elif user_input == 5:
             show_admin_menu()
@@ -283,7 +303,7 @@ def admin_student_menu():
 @log_decorator
 def show_teacher_menu():
     text = '''
-1. Show all groups
+1. Show all my groups
 2. Search teachers by group name
 3. Start lesson
 4. Logout
@@ -292,12 +312,16 @@ def show_teacher_menu():
     try:
         user_input = int(input('Choose menu: '))
         if user_input == 1:
+            print('\nHome -> My groups\n')
             pass
         elif user_input == 2:
+            print('\nHome -> Search teacher\n')
             pass
         elif user_input == 3:
+            print('\nHome -> Lesson\n')
             pass
         elif user_input == 4:
+            print("Logout successful")
             auth.logout()
             show_auth()
     except ValueError:
@@ -320,10 +344,13 @@ def show_student_menu():
     try:
         user_input = int(input('Choose menu: '))
         if user_input == 1:
+            print("\nHome -> Show all")
             pass
         elif user_input == 2:
+            print("\nHome -> Profile")
             pass
         elif user_input == 3:
+            print('Logout successful')
             auth.logout()
             show_auth()
         else:

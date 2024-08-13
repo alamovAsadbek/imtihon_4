@@ -27,7 +27,7 @@ class Auth:
                 user['is_login'] = True
                 if user_manager.write(data=all_users):
                     print('Login successful')
-                    return {'is_login': True, 'role': 'user'}
+                    return {'is_login': True, 'role': user['role']}
         print('Login failed')
         return {'is_login': False, 'role': 'admin'}
 
