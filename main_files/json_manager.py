@@ -39,17 +39,6 @@ class JsonManager:
             return True
 
     @log_decorator
-    def check_username(self, username: str) -> bool:
-        all_users: dict = self.read()
-        try:
-            for user in all_users.values():
-                if user['username'] == username:
-                    return True
-            return False
-        except KeyError:
-            return False
-
-    @log_decorator
     def append_data(self, data) -> bool:
         try:
             all_data: dict = self.read()
@@ -89,6 +78,14 @@ class JsonManager:
             if data_id.__str__() == data:
                 del all_data[data]
                 threading.Thread(target=self.write, args=(all_data,)).start()
+                return True
+        return False
+
+    @log_decorator
+    def check_data_by_key(self, key: str, value: str) -> bool:
+        all_users: dict = self.read()
+        for user in all_users.values():
+            if user[key] == data:
                 return True
         return False
 

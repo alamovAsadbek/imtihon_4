@@ -42,7 +42,7 @@ class AdminMenu:
         while True:
             if out_data is not None and out_data['username'] == username:
                 break
-            if user_manager.check_username(username=username) or username == self.__admin_username:
+            if user_manager.check_data_by_key(key='username', value=username) or username == self.__admin_username:
                 print('Username is taken. Please try again.')
                 username = input('Username: ').strip()
                 continue
@@ -84,6 +84,7 @@ class AdminMenu:
             "gender": gender,
             "phone_number": False,
             "email": False,
+            "xp": 0,
             'is_login': False
         }}
         threading.Thread(target=user_manager.append_data, args=(data,)).start()

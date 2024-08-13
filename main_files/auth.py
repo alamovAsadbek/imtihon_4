@@ -19,7 +19,7 @@ class Auth:
         if username == self.__admin_username and password == hashlib.sha256(
                 self.__admin_password.encode('utf-8')).hexdigest():
             return {'is_login': True, 'role': 'super_admin'}
-        if not user_manager.check_username(username=username):
+        if not user_manager.check_data_by_key(key='username', value=username):
             print('Username not found')
             return {'is_login': False, 'role': "admin"}
         for user in all_users.values():
