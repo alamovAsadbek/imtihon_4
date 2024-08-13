@@ -45,4 +45,8 @@ class Admin:
         self.__student_menu.delete_student()
         return True
 
+    @log_decorator
+    def show_all_student(self) -> bool:
+        self.__student_menu.show_all_students()
+        return True
     # / student
