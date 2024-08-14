@@ -137,3 +137,2814 @@
 08/14/2024 12:01:06 - main_files.decorator_func - INFO - Function append_data: args: (<main_files.json_manager.JsonManager object at 0x000002B2FBE1D8D0>, {'99381': {'id': 99381, 'username': 'student_javohir_4109', 'full_name': 'Javohir', 'password': 'b7005e61bb0a92d53568bce7fecf72e460ecfa7f8e3e59c18bd2925487ec4115', 'role': 'student', 'create_date': '14/08/2024 03:47:43', 'age': 20, 'gender': 'female', 'phone_number': '990690145', 'email': 'javohirmirzayev75@gmail.com', 'xp': 0, 'is_login': False}}) kwargs: {}, result: True executed successfully.
 08/14/2024 12:01:08 - main_files.decorator_func - INFO - Function only_send_email: args: (<main_files.email_sender.EmailSender object at 0x000002B2FD9E7790>, 'Lesson', 'You got 2 xp for attending the class', 'alamovasad55@gmail.com') kwargs: {}, result: True executed successfully.
 08/14/2024 12:01:12 - main_files.decorator_func - INFO - Function only_send_email: args: (<main_files.email_sender.EmailSender object at 0x000002B2FD9E7790>, 'Lesson', "You didn't come to class today", 'javohirmirzayev75@gmail.com') kwargs: {}, result: True executed successfully.
+08/14/2024 12:19:11 - main_files.decorator_func - INFO - Function open_json: args: (<main_files.json_manager.JsonManager object at 0x000002B2FBE1D8D0>,) kwargs: {'mode': 'r'}, result: <contextlib._GeneratorContextManager object at 0x000002B2FD9E6F50> executed successfully.
+08/14/2024 12:19:11 - main_files.decorator_func - INFO - Function read: args: (<main_files.json_manager.JsonManager object at 0x000002B2FBE1D8D0>,) kwargs: {}, result: {'20819': {'id': 20819, 'username': 'admin_alamov', 'full_name': "A'lamov", 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'admin', 'create_date': '2024-08-13 10:47:53', 'age': 20, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}, '42153': {'id': 42153, 'username': 'admin_asadbek', 'full_name': "A'lamov Asadbek", 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'admin', 'create_date': '2024-08-13 11:48:23', 'age': 20, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}, '94700': {'id': 94700, 'username': 'alamov_asadbek', 'full_name': 'Asadbek', 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'admin', 'create_date': '2024-08-13 12:02:47', 'age': 20, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}, '73232': {'id': 73232, 'username': 'student_alamov_7531', 'full_name': "A'lamov Asadbek", 'password': 'b4dd016affbc35ac493857b1846d26f12c9ef725424cdfce09a36a7ccadc154e', 'role': 'student', 'create_date': '13/08/2024 19:15:07', 'age': 21, 'gender': 'male', 'phone_number': '990690141', 'email': 'alamovasad55@gmail.com', 'xp': 4, 'is_login': False}, '66139': {'id': 66139, 'username': 'teacher_asadbek', 'full_name': "A'lamov Asadbek", 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'teacher', 'create_date': '2024-08-13 22:51:47', 'age': 25, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': True}, '99381': {'id': 99381, 'username': 'student_javohir_4109', 'full_name': 'Javohir', 'password': 'b7005e61bb0a92d53568bce7fecf72e460ecfa7f8e3e59c18bd2925487ec4115', 'role': 'student', 'create_date': '14/08/2024 03:47:43', 'age': 20, 'gender': 'female', 'phone_number': '990690145', 'email': 'javohirmirzayev75@gmail.com', 'xp': 0, 'is_login': False}, '53059': {'id': 53059, 'username': 'teacher_sanjarbekai', 'full_name': 'SanjarbekAI', 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'teacher', 'create_date': '2024-08-14 03:49:10', 'age': 25, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}} executed successfully.
+08/14/2024 12:19:11 - main_files.decorator_func - INFO - Function open_json: args: (<main_files.json_manager.JsonManager object at 0x000002B2FBE1D8D0>,) kwargs: {'mode': 'w'}, result: <contextlib._GeneratorContextManager object at 0x000002B2FD9E6FD0> executed successfully.
+08/14/2024 12:19:11 - main_files.decorator_func - INFO - Function write: args: (<main_files.json_manager.JsonManager object at 0x000002B2FBE1D8D0>, {'20819': {'id': 20819, 'username': 'admin_alamov', 'full_name': "A'lamov", 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'admin', 'create_date': '2024-08-13 10:47:53', 'age': 20, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}, '42153': {'id': 42153, 'username': 'admin_asadbek', 'full_name': "A'lamov Asadbek", 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'admin', 'create_date': '2024-08-13 11:48:23', 'age': 20, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}, '94700': {'id': 94700, 'username': 'alamov_asadbek', 'full_name': 'Asadbek', 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'admin', 'create_date': '2024-08-13 12:02:47', 'age': 20, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}, '73232': {'id': 73232, 'username': 'student_alamov_7531', 'full_name': "A'lamov Asadbek", 'password': 'b4dd016affbc35ac493857b1846d26f12c9ef725424cdfce09a36a7ccadc154e', 'role': 'student', 'create_date': '13/08/2024 19:15:07', 'age': 21, 'gender': 'male', 'phone_number': '990690141', 'email': 'alamovasad55@gmail.com', 'xp': 4, 'is_login': False}, '66139': {'id': 66139, 'username': 'teacher_asadbek', 'full_name': "A'lamov Asadbek", 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'teacher', 'create_date': '2024-08-13 22:51:47', 'age': 25, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}, '99381': {'id': 99381, 'username': 'student_javohir_4109', 'full_name': 'Javohir', 'password': 'b7005e61bb0a92d53568bce7fecf72e460ecfa7f8e3e59c18bd2925487ec4115', 'role': 'student', 'create_date': '14/08/2024 03:47:43', 'age': 20, 'gender': 'female', 'phone_number': '990690145', 'email': 'javohirmirzayev75@gmail.com', 'xp': 0, 'is_login': False}, '53059': {'id': 53059, 'username': 'teacher_sanjarbekai', 'full_name': 'SanjarbekAI', 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'teacher', 'create_date': '2024-08-14 03:49:10', 'age': 25, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}}) kwargs: {}, result: True executed successfully.
+08/14/2024 12:19:11 - main_files.decorator_func - INFO - Function logout: args: (<main_files.auth.Auth object at 0x000002B2FBD8C6D0>,) kwargs: {}, result: True executed successfully.
+08/14/2024 12:19:13 - main_files.decorator_func - INFO - Function open_json: args: (<main_files.json_manager.JsonManager object at 0x000002B2FBE1D8D0>,) kwargs: {'mode': 'r'}, result: <contextlib._GeneratorContextManager object at 0x000002B2FD9E4E90> executed successfully.
+08/14/2024 12:19:13 - main_files.decorator_func - INFO - Function read: args: (<main_files.json_manager.JsonManager object at 0x000002B2FBE1D8D0>,) kwargs: {}, result: {'20819': {'id': 20819, 'username': 'admin_alamov', 'full_name': "A'lamov", 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'admin', 'create_date': '2024-08-13 10:47:53', 'age': 20, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}, '42153': {'id': 42153, 'username': 'admin_asadbek', 'full_name': "A'lamov Asadbek", 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'admin', 'create_date': '2024-08-13 11:48:23', 'age': 20, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}, '94700': {'id': 94700, 'username': 'alamov_asadbek', 'full_name': 'Asadbek', 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'admin', 'create_date': '2024-08-13 12:02:47', 'age': 20, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}, '73232': {'id': 73232, 'username': 'student_alamov_7531', 'full_name': "A'lamov Asadbek", 'password': 'b4dd016affbc35ac493857b1846d26f12c9ef725424cdfce09a36a7ccadc154e', 'role': 'student', 'create_date': '13/08/2024 19:15:07', 'age': 21, 'gender': 'male', 'phone_number': '990690141', 'email': 'alamovasad55@gmail.com', 'xp': 4, 'is_login': False}, '66139': {'id': 66139, 'username': 'teacher_asadbek', 'full_name': "A'lamov Asadbek", 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'teacher', 'create_date': '2024-08-13 22:51:47', 'age': 25, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}, '99381': {'id': 99381, 'username': 'student_javohir_4109', 'full_name': 'Javohir', 'password': 'b7005e61bb0a92d53568bce7fecf72e460ecfa7f8e3e59c18bd2925487ec4115', 'role': 'student', 'create_date': '14/08/2024 03:47:43', 'age': 20, 'gender': 'female', 'phone_number': '990690145', 'email': 'javohirmirzayev75@gmail.com', 'xp': 0, 'is_login': False}, '53059': {'id': 53059, 'username': 'teacher_sanjarbekai', 'full_name': 'SanjarbekAI', 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'teacher', 'create_date': '2024-08-14 03:49:10', 'age': 25, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}} executed successfully.
+08/14/2024 12:20:02 - main_files.decorator_func - INFO - Function open_json: args: (<main_files.json_manager.JsonManager object at 0x000002B2FBE1D8D0>,) kwargs: {'mode': 'r'}, result: <contextlib._GeneratorContextManager object at 0x000002B2FBD8D950> executed successfully.
+08/14/2024 12:20:02 - main_files.decorator_func - INFO - Function read: args: (<main_files.json_manager.JsonManager object at 0x000002B2FBE1D8D0>,) kwargs: {}, result: {'20819': {'id': 20819, 'username': 'admin_alamov', 'full_name': "A'lamov", 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'admin', 'create_date': '2024-08-13 10:47:53', 'age': 20, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}, '42153': {'id': 42153, 'username': 'admin_asadbek', 'full_name': "A'lamov Asadbek", 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'admin', 'create_date': '2024-08-13 11:48:23', 'age': 20, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}, '94700': {'id': 94700, 'username': 'alamov_asadbek', 'full_name': 'Asadbek', 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'admin', 'create_date': '2024-08-13 12:02:47', 'age': 20, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}, '73232': {'id': 73232, 'username': 'student_alamov_7531', 'full_name': "A'lamov Asadbek", 'password': 'b4dd016affbc35ac493857b1846d26f12c9ef725424cdfce09a36a7ccadc154e', 'role': 'student', 'create_date': '13/08/2024 19:15:07', 'age': 21, 'gender': 'male', 'phone_number': '990690141', 'email': 'alamovasad55@gmail.com', 'xp': 4, 'is_login': False}, '66139': {'id': 66139, 'username': 'teacher_asadbek', 'full_name': "A'lamov Asadbek", 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'teacher', 'create_date': '2024-08-13 22:51:47', 'age': 25, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}, '99381': {'id': 99381, 'username': 'student_javohir_4109', 'full_name': 'Javohir', 'password': 'b7005e61bb0a92d53568bce7fecf72e460ecfa7f8e3e59c18bd2925487ec4115', 'role': 'student', 'create_date': '14/08/2024 03:47:43', 'age': 20, 'gender': 'female', 'phone_number': '990690145', 'email': 'javohirmirzayev75@gmail.com', 'xp': 0, 'is_login': False}, '53059': {'id': 53059, 'username': 'teacher_sanjarbekai', 'full_name': 'SanjarbekAI', 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'teacher', 'create_date': '2024-08-14 03:49:10', 'age': 25, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}} executed successfully.
+08/14/2024 12:20:02 - main_files.decorator_func - INFO - Function check_data_by_key: args: (<main_files.json_manager.JsonManager object at 0x000002B2FBE1D8D0>,) kwargs: {'key': 'username', 'value': 'student_javohir_4109'}, result: True executed successfully.
+08/14/2024 12:20:02 - main_files.decorator_func - INFO - Function login: args: (<main_files.auth.Auth object at 0x000002B2FBD8C6D0>,) kwargs: {}, result: {'is_login': False, 'role': 'admin'} executed successfully.
+08/14/2024 12:20:06 - main_files.decorator_func - INFO - Function open_json: args: (<main_files.json_manager.JsonManager object at 0x000002B2FBE1D8D0>,) kwargs: {'mode': 'r'}, result: <contextlib._GeneratorContextManager object at 0x000002B2FD9E7A90> executed successfully.
+08/14/2024 12:20:06 - main_files.decorator_func - INFO - Function read: args: (<main_files.json_manager.JsonManager object at 0x000002B2FBE1D8D0>,) kwargs: {}, result: {'20819': {'id': 20819, 'username': 'admin_alamov', 'full_name': "A'lamov", 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'admin', 'create_date': '2024-08-13 10:47:53', 'age': 20, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}, '42153': {'id': 42153, 'username': 'admin_asadbek', 'full_name': "A'lamov Asadbek", 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'admin', 'create_date': '2024-08-13 11:48:23', 'age': 20, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}, '94700': {'id': 94700, 'username': 'alamov_asadbek', 'full_name': 'Asadbek', 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'admin', 'create_date': '2024-08-13 12:02:47', 'age': 20, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}, '73232': {'id': 73232, 'username': 'student_alamov_7531', 'full_name': "A'lamov Asadbek", 'password': 'b4dd016affbc35ac493857b1846d26f12c9ef725424cdfce09a36a7ccadc154e', 'role': 'student', 'create_date': '13/08/2024 19:15:07', 'age': 21, 'gender': 'male', 'phone_number': '990690141', 'email': 'alamovasad55@gmail.com', 'xp': 4, 'is_login': False}, '66139': {'id': 66139, 'username': 'teacher_asadbek', 'full_name': "A'lamov Asadbek", 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'teacher', 'create_date': '2024-08-13 22:51:47', 'age': 25, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}, '99381': {'id': 99381, 'username': 'student_javohir_4109', 'full_name': 'Javohir', 'password': 'b7005e61bb0a92d53568bce7fecf72e460ecfa7f8e3e59c18bd2925487ec4115', 'role': 'student', 'create_date': '14/08/2024 03:47:43', 'age': 20, 'gender': 'female', 'phone_number': '990690145', 'email': 'javohirmirzayev75@gmail.com', 'xp': 0, 'is_login': False}, '53059': {'id': 53059, 'username': 'teacher_sanjarbekai', 'full_name': 'SanjarbekAI', 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'teacher', 'create_date': '2024-08-14 03:49:10', 'age': 25, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}} executed successfully.
+08/14/2024 12:20:12 - main_files.decorator_func - INFO - Function open_json: args: (<main_files.json_manager.JsonManager object at 0x000002B2FBE1D8D0>,) kwargs: {'mode': 'r'}, result: <contextlib._GeneratorContextManager object at 0x000002B2FD9E7D10> executed successfully.
+08/14/2024 12:20:12 - main_files.decorator_func - INFO - Function read: args: (<main_files.json_manager.JsonManager object at 0x000002B2FBE1D8D0>,) kwargs: {}, result: {'20819': {'id': 20819, 'username': 'admin_alamov', 'full_name': "A'lamov", 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'admin', 'create_date': '2024-08-13 10:47:53', 'age': 20, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}, '42153': {'id': 42153, 'username': 'admin_asadbek', 'full_name': "A'lamov Asadbek", 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'admin', 'create_date': '2024-08-13 11:48:23', 'age': 20, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}, '94700': {'id': 94700, 'username': 'alamov_asadbek', 'full_name': 'Asadbek', 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'admin', 'create_date': '2024-08-13 12:02:47', 'age': 20, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}, '73232': {'id': 73232, 'username': 'student_alamov_7531', 'full_name': "A'lamov Asadbek", 'password': 'b4dd016affbc35ac493857b1846d26f12c9ef725424cdfce09a36a7ccadc154e', 'role': 'student', 'create_date': '13/08/2024 19:15:07', 'age': 21, 'gender': 'male', 'phone_number': '990690141', 'email': 'alamovasad55@gmail.com', 'xp': 4, 'is_login': False}, '66139': {'id': 66139, 'username': 'teacher_asadbek', 'full_name': "A'lamov Asadbek", 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'teacher', 'create_date': '2024-08-13 22:51:47', 'age': 25, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}, '99381': {'id': 99381, 'username': 'student_javohir_4109', 'full_name': 'Javohir', 'password': 'b7005e61bb0a92d53568bce7fecf72e460ecfa7f8e3e59c18bd2925487ec4115', 'role': 'student', 'create_date': '14/08/2024 03:47:43', 'age': 20, 'gender': 'female', 'phone_number': '990690145', 'email': 'javohirmirzayev75@gmail.com', 'xp': 0, 'is_login': False}, '53059': {'id': 53059, 'username': 'teacher_sanjarbekai', 'full_name': 'SanjarbekAI', 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'teacher', 'create_date': '2024-08-14 03:49:10', 'age': 25, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}} executed successfully.
+08/14/2024 12:20:12 - main_files.decorator_func - INFO - Function check_data_by_key: args: (<main_files.json_manager.JsonManager object at 0x000002B2FBE1D8D0>,) kwargs: {'key': 'username', 'value': 'student_alamov_7531'}, result: True executed successfully.
+08/14/2024 12:20:12 - main_files.decorator_func - INFO - Function open_json: args: (<main_files.json_manager.JsonManager object at 0x000002B2FBE1D8D0>,) kwargs: {'mode': 'w'}, result: <contextlib._GeneratorContextManager object at 0x000002B2FD9E6D50> executed successfully.
+08/14/2024 12:20:12 - main_files.decorator_func - INFO - Function write: args: (<main_files.json_manager.JsonManager object at 0x000002B2FBE1D8D0>,) kwargs: {'data': {'20819': {'id': 20819, 'username': 'admin_alamov', 'full_name': "A'lamov", 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'admin', 'create_date': '2024-08-13 10:47:53', 'age': 20, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}, '42153': {'id': 42153, 'username': 'admin_asadbek', 'full_name': "A'lamov Asadbek", 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'admin', 'create_date': '2024-08-13 11:48:23', 'age': 20, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}, '94700': {'id': 94700, 'username': 'alamov_asadbek', 'full_name': 'Asadbek', 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'admin', 'create_date': '2024-08-13 12:02:47', 'age': 20, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}, '73232': {'id': 73232, 'username': 'student_alamov_7531', 'full_name': "A'lamov Asadbek", 'password': 'b4dd016affbc35ac493857b1846d26f12c9ef725424cdfce09a36a7ccadc154e', 'role': 'student', 'create_date': '13/08/2024 19:15:07', 'age': 21, 'gender': 'male', 'phone_number': '990690141', 'email': 'alamovasad55@gmail.com', 'xp': 4, 'is_login': True}, '66139': {'id': 66139, 'username': 'teacher_asadbek', 'full_name': "A'lamov Asadbek", 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'teacher', 'create_date': '2024-08-13 22:51:47', 'age': 25, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}, '99381': {'id': 99381, 'username': 'student_javohir_4109', 'full_name': 'Javohir', 'password': 'b7005e61bb0a92d53568bce7fecf72e460ecfa7f8e3e59c18bd2925487ec4115', 'role': 'student', 'create_date': '14/08/2024 03:47:43', 'age': 20, 'gender': 'female', 'phone_number': '990690145', 'email': 'javohirmirzayev75@gmail.com', 'xp': 0, 'is_login': False}, '53059': {'id': 53059, 'username': 'teacher_sanjarbekai', 'full_name': 'SanjarbekAI', 'password': '0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c', 'role': 'teacher', 'create_date': '2024-08-14 03:49:10', 'age': 25, 'gender': 'male', 'phone_number': False, 'email': False, 'xp': 0, 'is_login': False}}}, result: True executed successfully.
+08/14/2024 12:20:12 - main_files.decorator_func - INFO - Function login: args: (<main_files.auth.Auth object at 0x000002B2FBD8C6D0>,) kwargs: {}, result: {'is_login': True, 'role': 'student'} executed successfully.
+08/14/2024 12:40:30 - main_files.decorator_func - ERROR - Function show_student_menu: [Errno 22] Invalid argument
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 505, in show_student_menu
+    try:
+         
+EOFError: EOF when reading a line
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 523, in show_student_menu
+    print("Invalid input")
+    ^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+08/14/2024 12:40:30 - main_files.decorator_func - ERROR - Function show_auth: [Errno 22] Invalid argument
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 505, in show_student_menu
+    try:
+         
+EOFError: EOF when reading a line
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 523, in show_student_menu
+    print("Invalid input")
+    ^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 29, in show_auth
+    elif result_login['role'] == "student":
+        ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+08/14/2024 12:40:30 - main_files.decorator_func - ERROR - Function show_auth: [Errno 22] Invalid argument
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 505, in show_student_menu
+    try:
+         
+EOFError: EOF when reading a line
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 523, in show_student_menu
+    print("Invalid input")
+    ^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 29, in show_auth
+    elif result_login['role'] == "student":
+        ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 21, in show_auth
+    if not result_login['is_login']:
+        ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+08/14/2024 12:40:30 - main_files.decorator_func - ERROR - Function show_teacher_menu: [Errno 22] Invalid argument
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 505, in show_student_menu
+    try:
+         
+EOFError: EOF when reading a line
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 523, in show_student_menu
+    print("Invalid input")
+    ^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 29, in show_auth
+    elif result_login['role'] == "student":
+        ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 21, in show_auth
+    if not result_login['is_login']:
+        ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 483, in show_teacher_menu
+    auth.logout()
+    ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+08/14/2024 12:40:30 - main_files.decorator_func - ERROR - Function show_teacher_menu: [Errno 22] Invalid argument
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 505, in show_student_menu
+    try:
+         
+EOFError: EOF when reading a line
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 523, in show_student_menu
+    print("Invalid input")
+    ^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 29, in show_auth
+    elif result_login['role'] == "student":
+        ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 21, in show_auth
+    if not result_login['is_login']:
+        ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 483, in show_teacher_menu
+    auth.logout()
+    ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 479, in show_teacher_menu
+    teacher.start_lesson()
+    ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+08/14/2024 12:40:30 - main_files.decorator_func - ERROR - Function show_auth: [Errno 22] Invalid argument
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 505, in show_student_menu
+    try:
+         
+EOFError: EOF when reading a line
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 523, in show_student_menu
+    print("Invalid input")
+    ^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 29, in show_auth
+    elif result_login['role'] == "student":
+        ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 21, in show_auth
+    if not result_login['is_login']:
+        ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 483, in show_teacher_menu
+    auth.logout()
+    ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 479, in show_teacher_menu
+    teacher.start_lesson()
+    ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 27, in show_auth
+    elif result_login['role'] == "teacher":
+        ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+08/14/2024 12:40:30 - main_files.decorator_func - ERROR - Function show_auth: [Errno 22] Invalid argument
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 505, in show_student_menu
+    try:
+         
+EOFError: EOF when reading a line
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 523, in show_student_menu
+    print("Invalid input")
+    ^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 29, in show_auth
+    elif result_login['role'] == "student":
+        ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 21, in show_auth
+    if not result_login['is_login']:
+        ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 483, in show_teacher_menu
+    auth.logout()
+    ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 479, in show_teacher_menu
+    teacher.start_lesson()
+    ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 27, in show_auth
+    elif result_login['role'] == "teacher":
+        ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 21, in show_auth
+    if not result_login['is_login']:
+        ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+08/14/2024 12:40:30 - main_files.decorator_func - ERROR - Function show_admin_menu: [Errno 22] Invalid argument
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 505, in show_student_menu
+    try:
+         
+EOFError: EOF when reading a line
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 523, in show_student_menu
+    print("Invalid input")
+    ^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 29, in show_auth
+    elif result_login['role'] == "student":
+        ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 21, in show_auth
+    if not result_login['is_login']:
+        ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 483, in show_teacher_menu
+    auth.logout()
+    ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 479, in show_teacher_menu
+    teacher.start_lesson()
+    ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 27, in show_auth
+    elif result_login['role'] == "teacher":
+        ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 21, in show_auth
+    if not result_login['is_login']:
+        ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 284, in show_admin_menu
+    auth.logout()
+    ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 292, in show_admin_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+08/14/2024 12:40:30 - main_files.decorator_func - ERROR - Function admin_group_menu: [Errno 22] Invalid argument
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 505, in show_student_menu
+    try:
+         
+EOFError: EOF when reading a line
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 523, in show_student_menu
+    print("Invalid input")
+    ^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 29, in show_auth
+    elif result_login['role'] == "student":
+        ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 21, in show_auth
+    if not result_login['is_login']:
+        ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 483, in show_teacher_menu
+    auth.logout()
+    ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 479, in show_teacher_menu
+    teacher.start_lesson()
+    ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 27, in show_auth
+    elif result_login['role'] == "teacher":
+        ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 21, in show_auth
+    if not result_login['is_login']:
+        ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 284, in show_admin_menu
+    auth.logout()
+    ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 292, in show_admin_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 400, in admin_group_menu
+    elif user_input == 4:
+        ^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 408, in admin_group_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+08/14/2024 12:40:30 - main_files.decorator_func - ERROR - Function admin_group_menu: [Errno 22] Invalid argument
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 505, in show_student_menu
+    try:
+         
+EOFError: EOF when reading a line
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 523, in show_student_menu
+    print("Invalid input")
+    ^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 29, in show_auth
+    elif result_login['role'] == "student":
+        ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 21, in show_auth
+    if not result_login['is_login']:
+        ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 483, in show_teacher_menu
+    auth.logout()
+    ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 479, in show_teacher_menu
+    teacher.start_lesson()
+    ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 27, in show_auth
+    elif result_login['role'] == "teacher":
+        ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 21, in show_auth
+    if not result_login['is_login']:
+        ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 284, in show_admin_menu
+    auth.logout()
+    ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 292, in show_admin_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 400, in admin_group_menu
+    elif user_input == 4:
+        ^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 408, in admin_group_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 398, in admin_group_menu
+    admin.show_all_groups()
+    ^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 408, in admin_group_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+08/14/2024 12:40:30 - main_files.decorator_func - ERROR - Function show_admin_menu: [Errno 22] Invalid argument
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 505, in show_student_menu
+    try:
+         
+EOFError: EOF when reading a line
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 523, in show_student_menu
+    print("Invalid input")
+    ^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 29, in show_auth
+    elif result_login['role'] == "student":
+        ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 21, in show_auth
+    if not result_login['is_login']:
+        ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 483, in show_teacher_menu
+    auth.logout()
+    ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 479, in show_teacher_menu
+    teacher.start_lesson()
+    ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 27, in show_auth
+    elif result_login['role'] == "teacher":
+        ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 21, in show_auth
+    if not result_login['is_login']:
+        ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 284, in show_admin_menu
+    auth.logout()
+    ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 292, in show_admin_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 400, in admin_group_menu
+    elif user_input == 4:
+        ^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 408, in admin_group_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 398, in admin_group_menu
+    admin.show_all_groups()
+    ^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 408, in admin_group_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 263, in show_admin_menu
+    print('\nHome -> Group\n')
+    ^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 292, in show_admin_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+08/14/2024 12:40:30 - main_files.decorator_func - ERROR - Function show_admin_menu: [Errno 22] Invalid argument
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 505, in show_student_menu
+    try:
+         
+EOFError: EOF when reading a line
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 523, in show_student_menu
+    print("Invalid input")
+    ^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 29, in show_auth
+    elif result_login['role'] == "student":
+        ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 21, in show_auth
+    if not result_login['is_login']:
+        ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 483, in show_teacher_menu
+    auth.logout()
+    ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 479, in show_teacher_menu
+    teacher.start_lesson()
+    ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 27, in show_auth
+    elif result_login['role'] == "teacher":
+        ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 21, in show_auth
+    if not result_login['is_login']:
+        ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 284, in show_admin_menu
+    auth.logout()
+    ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 292, in show_admin_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 400, in admin_group_menu
+    elif user_input == 4:
+        ^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 408, in admin_group_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 398, in admin_group_menu
+    admin.show_all_groups()
+    ^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 408, in admin_group_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 263, in show_admin_menu
+    print('\nHome -> Group\n')
+    ^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 292, in show_admin_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 273, in show_admin_menu
+    admin.add_student_to_group()
+    ^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 292, in show_admin_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+08/14/2024 12:40:30 - main_files.decorator_func - ERROR - Function show_auth: [Errno 22] Invalid argument
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 505, in show_student_menu
+    try:
+         
+EOFError: EOF when reading a line
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 523, in show_student_menu
+    print("Invalid input")
+    ^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 29, in show_auth
+    elif result_login['role'] == "student":
+        ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 21, in show_auth
+    if not result_login['is_login']:
+        ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 483, in show_teacher_menu
+    auth.logout()
+    ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 479, in show_teacher_menu
+    teacher.start_lesson()
+    ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 27, in show_auth
+    elif result_login['role'] == "teacher":
+        ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 21, in show_auth
+    if not result_login['is_login']:
+        ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 284, in show_admin_menu
+    auth.logout()
+    ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 292, in show_admin_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 400, in admin_group_menu
+    elif user_input == 4:
+        ^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 408, in admin_group_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 398, in admin_group_menu
+    admin.show_all_groups()
+    ^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 408, in admin_group_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 263, in show_admin_menu
+    print('\nHome -> Group\n')
+    ^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 292, in show_admin_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 273, in show_admin_menu
+    admin.add_student_to_group()
+    ^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 292, in show_admin_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 25, in show_auth
+    elif result_login['role'] == "admin":
+        ^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+08/14/2024 12:40:30 - main_files.decorator_func - ERROR - Function show_teacher_menu: [Errno 22] Invalid argument
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 505, in show_student_menu
+    try:
+         
+EOFError: EOF when reading a line
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 523, in show_student_menu
+    print("Invalid input")
+    ^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 29, in show_auth
+    elif result_login['role'] == "student":
+        ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 21, in show_auth
+    if not result_login['is_login']:
+        ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 483, in show_teacher_menu
+    auth.logout()
+    ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 479, in show_teacher_menu
+    teacher.start_lesson()
+    ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 27, in show_auth
+    elif result_login['role'] == "teacher":
+        ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 21, in show_auth
+    if not result_login['is_login']:
+        ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 284, in show_admin_menu
+    auth.logout()
+    ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 292, in show_admin_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 400, in admin_group_menu
+    elif user_input == 4:
+        ^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 408, in admin_group_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 398, in admin_group_menu
+    admin.show_all_groups()
+    ^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 408, in admin_group_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 263, in show_admin_menu
+    print('\nHome -> Group\n')
+    ^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 292, in show_admin_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 273, in show_admin_menu
+    admin.add_student_to_group()
+    ^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 292, in show_admin_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 25, in show_auth
+    elif result_login['role'] == "admin":
+        ^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 483, in show_teacher_menu
+    auth.logout()
+    ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+08/14/2024 12:40:30 - main_files.decorator_func - ERROR - Function show_teacher_menu: [Errno 22] Invalid argument
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 505, in show_student_menu
+    try:
+         
+EOFError: EOF when reading a line
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 523, in show_student_menu
+    print("Invalid input")
+    ^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 29, in show_auth
+    elif result_login['role'] == "student":
+        ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 21, in show_auth
+    if not result_login['is_login']:
+        ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 483, in show_teacher_menu
+    auth.logout()
+    ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 479, in show_teacher_menu
+    teacher.start_lesson()
+    ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 27, in show_auth
+    elif result_login['role'] == "teacher":
+        ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 21, in show_auth
+    if not result_login['is_login']:
+        ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 284, in show_admin_menu
+    auth.logout()
+    ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 292, in show_admin_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 400, in admin_group_menu
+    elif user_input == 4:
+        ^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 408, in admin_group_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 398, in admin_group_menu
+    admin.show_all_groups()
+    ^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 408, in admin_group_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 263, in show_admin_menu
+    print('\nHome -> Group\n')
+    ^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 292, in show_admin_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 273, in show_admin_menu
+    admin.add_student_to_group()
+    ^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 292, in show_admin_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 25, in show_auth
+    elif result_login['role'] == "admin":
+        ^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 483, in show_teacher_menu
+    auth.logout()
+    ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 479, in show_teacher_menu
+    teacher.start_lesson()
+    ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+08/14/2024 12:40:30 - main_files.decorator_func - ERROR - Function show_auth: [Errno 22] Invalid argument
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 505, in show_student_menu
+    try:
+         
+EOFError: EOF when reading a line
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 523, in show_student_menu
+    print("Invalid input")
+    ^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 29, in show_auth
+    elif result_login['role'] == "student":
+        ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 21, in show_auth
+    if not result_login['is_login']:
+        ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 483, in show_teacher_menu
+    auth.logout()
+    ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 479, in show_teacher_menu
+    teacher.start_lesson()
+    ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 27, in show_auth
+    elif result_login['role'] == "teacher":
+        ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 21, in show_auth
+    if not result_login['is_login']:
+        ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 284, in show_admin_menu
+    auth.logout()
+    ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 292, in show_admin_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 400, in admin_group_menu
+    elif user_input == 4:
+        ^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 408, in admin_group_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 398, in admin_group_menu
+    admin.show_all_groups()
+    ^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 408, in admin_group_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 263, in show_admin_menu
+    print('\nHome -> Group\n')
+    ^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 292, in show_admin_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 273, in show_admin_menu
+    admin.add_student_to_group()
+    ^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 292, in show_admin_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 25, in show_auth
+    elif result_login['role'] == "admin":
+        ^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 483, in show_teacher_menu
+    auth.logout()
+    ^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 479, in show_teacher_menu
+    teacher.start_lesson()
+    ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 491, in show_teacher_menu
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 27, in show_auth
+    elif result_login['role'] == "teacher":
+        ^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 29, in wrapper
+    print(FunctionException(message))
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main_files\decorator_func.py", line 21, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Code\NAJOT TALIM\IMTIHON\imtihon4\main.py", line 43, in show_auth
+    except Exception as e:
+        ^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument
