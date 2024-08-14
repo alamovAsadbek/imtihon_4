@@ -4,6 +4,7 @@ from main_files.decorator_func import log_decorator
 from role.admin.group_menu import GroupMenu
 from role.admin.student_group import StudentGroup
 from role.super_admin.student_menu import StudentMenu
+from role.super_admin.teacher_menu import TeacherMenu
 
 
 class Admin:
@@ -13,6 +14,7 @@ class Admin:
         self.__group_menu = GroupMenu()
         self.__student_menu = StudentMenu()
         self.__student_group = StudentGroup()
+        self.__teacher_menu = TeacherMenu()
 
     # group
     @log_decorator
@@ -56,6 +58,28 @@ class Admin:
 
     # / student
 
+    # teacher
+    @log_decorator
+    def create_teacher(self) -> bool:
+        self.__teacher_menu.add_new_teacher()
+        return True
+
+    @log_decorator
+    def update_teacher(self) -> bool:
+        self.__teacher_menu.update_teacher()
+        return True
+
+    @log_decorator
+    def delete_teacher(self) -> bool:
+        self.__teacher_menu.delete_taecher()
+        return True
+
+    @log_decorator
+    def show_all_teacher(self) -> bool:
+        self.__teacher_menu.show_all_teacher()
+        return True
+
+    # /teacher
     # add student to group
     @log_decorator
     def add_student_to_group(self) -> bool:

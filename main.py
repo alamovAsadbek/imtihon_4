@@ -247,10 +247,11 @@ def show_admin_menu():
     text = '''
 1. Group
 2. Student
-3. Add a student to a group
-4. Search student
-5. Payment
-6. Logout
+3. Teacher
+4. Add a student to a group
+5. Search student
+6. Payment
+7. Logout
     '''
     print(text)
     try:
@@ -263,17 +264,19 @@ def show_admin_menu():
             print('\nHome -> Student\n')
             admin_student_menu()
         elif user_input == 3:
+            print('\nHome -> Teacher\n')
+        elif user_input == 4:
             print('\nHome -> Add student to group\n')
             admin.add_student_to_group()
             show_admin_menu()
-        elif user_input == 4:
+        elif user_input == 5:
             print('\nHome -> Search student\n')
             admin.search_student()
             show_admin_menu()
-        elif user_input == 5:
+        elif user_input == 6:
             print('\nHome -> Payment\n')
             payment_menu()
-        elif user_input == 6:
+        elif user_input == 7:
             print("Logout successful")
             auth.logout()
             show_auth()
@@ -325,6 +328,18 @@ def payment_menu():
     except Exception as e:
         print(f'Error: {e}')
         payment_menu()
+
+
+@log_decorator
+def admin_teacher_menu():
+    text = '''
+1. Create teacher
+2. Update teacher
+3. Delete teacher
+4. Show all teachers
+5. Back
+    '''
+    print(text)
 
 
 # A function related to groups in the Admin menu
