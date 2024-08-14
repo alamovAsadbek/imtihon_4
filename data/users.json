@@ -53,7 +53,7 @@
         "phone_number": "990690141",
         "email": "alamovasad55@gmail.com",
         "xp": 4,
-        "is_login": false
+        "is_login": true
     },
     "66139": {
         "id": 66139,
@@ -67,7 +67,7 @@
         "phone_number": false,
         "email": false,
         "xp": 0,
-        "is_login": true
+        "is_login": false
     },
     "99381": {
         "id": 99381,

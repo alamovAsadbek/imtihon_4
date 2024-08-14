@@ -73,6 +73,7 @@ class Teacher:
             return False
         print(f"Group ID: {get_group['id']}, Group name: {get_group['name']}, Max student: {get_group['max_student']},"
               f" Start time: {get_group['start_time']}, End time: {get_group['end_time']}")
+        lesson_subject: str = input("Lesson subject: ")
         print('\nAttendance:')
         print(f'\n1. Attended \t 2. Did not participate\n')
         for student in get_group['students']:
@@ -84,11 +85,11 @@ class Teacher:
                 print("Invalid input")
                 user_input: int = int(input("Confirm: "))
             email_subject = 'Lesson'
-            email_body = f'You got 2 xp for attending the class'
+            email_body = f'Lesson subject: {lesson_subject}\nYou got 2 xp for attending the class'
             get_student['xp'] += 2
             if user_input == 2:
                 email_subject = 'Lesson'
-                email_body = f"You didn't come to class today"
+                email_body = f"Lesson subject: {lesson_subject}\nYou didn't come to class today"
                 get_student['xp'] -= 2
             threading.Thread(target=self.__email_sender.only_send_email,
                              args=(email_subject, email_body, get_student['email'])).start()
