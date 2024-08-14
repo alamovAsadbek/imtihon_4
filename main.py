@@ -457,7 +457,7 @@ def admin_student_menu():
 def show_teacher_menu():
     text = '''
 1. Show all my groups
-2. Search teachers by group name
+2. View the list of students by group
 3. Start lesson
 4. Logout
     '''
