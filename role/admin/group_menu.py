@@ -83,7 +83,7 @@ class GroupMenu:
             pattern = r"^\d{2}\.\d{2}\.\d{4}$"
             check_date = bool(re.match(pattern, start_time))
             today = datetime.now().strftime("%d%m%y")
-            if not check_date or today < start_time:
+            if not check_date or today > start_time:
                 print("Start date is invalid")
                 start_time: str = input("Enter start time(dd.mm.yyyy): ").strip()
                 continue

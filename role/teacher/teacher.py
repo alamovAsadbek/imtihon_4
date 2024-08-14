@@ -30,14 +30,14 @@ class Teacher:
     @log_decorator
     def show_student_to_group(self) -> bool:
         count = 1
-        for group in self.__group_menu.show_all_group():
-            if group is False or group is None:
-                print("Group not found")
-                return False
-            print(group)
+        if not self.my_groups():
+            return False
         choose_group: int = int(input("Enter group id: "))
         get_group: dict = group_manager.get_data(data_id=choose_group)
         if get_group is None or get_group is False:
+            print("Group not found")
+            return False
+        elif get_group['teacher'] != self.__active_teacher['id']:
             print("Group not found")
             return False
         print(f"Group ID: {get_group['id']}, Group name: {get_group['name']}, Max student: {get_group['max_students']},"
