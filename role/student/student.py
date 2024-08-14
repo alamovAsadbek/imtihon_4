@@ -1,3 +1,5 @@
+import threading
+
 from main_files.decorator_func import log_decorator
 from main_files.json_manager import user_manager, group_manager
 
@@ -5,6 +7,7 @@ from main_files.json_manager import user_manager, group_manager
 class Student:
     def __init__(self):
         self.__active_student = user_manager.get_active_user()
+        self.__admin_email = 'alamovasad@gmail.com'
 
     @log_decorator
     def show_my_groups(self) -> bool:
@@ -46,4 +49,64 @@ class Student:
 
     @log_decorator
     def update_profile(self):
-        pass
+        print("\nEnter new data\n")
+        fullname: str = input("Fullname: ").strip()
+        age: int = int(input("Age: ").strip())
+        while True:
+            email: str = input('Email: ').strip()
+            if not user_manager.is_valid_email_format(email=email):
+                print("Email validation failed, please try again.")
+                print("Example: email@gmail.com")
+                continue
+            elif user_manager.check_data_by_key(key='email', value=email) or email == self.__admin_email:
+                print("This email is already registered.")
+                continue
+            break
+        age: int = int(input('Age: ').strip())
+        while age < 5:
+            print("The number entered must be older than 5 years")
+            age: int = int(input('Age: ').strip())
+        gender: str = 'male'
+        while True:
+            print("Choose gender")
+            print(f'1. Male \t 2. Female')
+            choice_gender: int = int(input('Gender: ').strip())
+            if choice_gender < 1 or choice_gender > 2:
+                print("Gender must be between 1 and 2.")
+                continue
+            elif choice_gender == 1:
+                gender = 'male'
+                break
+            elif choice_gender == 2:
+                gender = 'female'
+                break
+            else:
+                print("Something went wrong.")
+
+        while True:
+            phone_number: str = input('Phone number (+998): ').strip()
+            if phone_number == self.__active_student['phone_number']:
+                pass
+            elif user_manager.check_data_by_key(key='phone_number', value=phone_number):
+                print("This phone number is already in use.")
+                continue
+            break
+        student_data = {
+            f'{self.__active_student["id"]}': {
+                "id": self.__active_student["id"],
+                "username": self.__active_student['username'],
+                "full_name": fullname,
+                "password": self.__active_student['password'],
+                "role": "student",
+                "create_date": self.__active_student['create_date'],
+                "age": age,
+                "gender": gender,
+                "phone_number": phone_number,
+                "email": email,
+                "xp": self.__active_student['xp'],
+                "is_login": False
+            }
+        }
+        threading.Thread(target=user_manager.append_data, args=(student_data,)).start()
+        print("Your profile updated")
+        return True
