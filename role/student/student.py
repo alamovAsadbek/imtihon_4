@@ -20,3 +20,7 @@ class Student:
             print("Your group is not found")
             return False
         return True
+
+    @log_decorator
+    def student_profile(self):
+        pass
