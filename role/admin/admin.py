@@ -97,6 +97,6 @@ class Admin:
 
     @log_decorator
     def withdraw_payment_student(self):
-        self.__student_group.withdraw_payment_group()
+        self.__student_group.withdraw_payment_student()
         return True
     # /payment

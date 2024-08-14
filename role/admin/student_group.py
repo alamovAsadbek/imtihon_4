@@ -122,30 +122,67 @@ class StudentGroup:
     @log_decorator
     def withdraw_payment_group(self):
         email_subject = "Payment"
-        email_body = "1320000 uzs have been withdrawn from your account"
+        email_body: str = ''
         for group in self.__group_menu.show_all_group():
             if group is False or group is None:
                 print("Groups not found")
                 return False
             print(group)
         choose_group: int = int(input("Enter group id: "))
+        amount: int = int(input("Amount(uzs): "))
         get_data: dict = group_manager.get_data(data_id=choose_group)
         if get_data is False or get_data is None:
             print("Group not found")
             return False
         for pay_data in get_data['students']:
             student_balance = self.count_balance(user_id=pay_data)
-            data_id = payment_manager.random_id()
-            data = {f"{data_id}": {
-                "id": data_id,
-                "amount": -1320000,
-                "student_id": pay_data,
-                "create_date": self.__created_data
-            }}
-            if student_balance >= 1320000:
+            if student_balance >= amount:
+                data_id = payment_manager.random_id()
+                data = {f"{data_id}": {
+                    "id": data_id,
+                    "amount": -amount,
+                    "student_id": pay_data,
+                    "create_date": self.__created_data
+                }}
                 threading.Thread(target=payment_manager.append_data, args=(data,)).start()
+                email_body = f"{amount} uzs have been withdrawn from your account"
             else:
                 email_body = 'You do not have enough money for the course, please top up your account'
             threading.Thread(target=self.__email_sender.send_email, args=('all', email_subject, email_body)).start()
             print("Finished")
             return True
+
+    @log_decorator
+    def withdraw_payment_student(self):
+        for student in self.__student_menu.show_all_students():
+            if student is False or student is None:
+                print("Student not found")
+                return False
+            print(student)
+        student_id: int = int(input("Enter student id: ").strip())
+        get_student: dict = user_manager.get_data(data_id=student_id)
+        if get_student is False or get_student is None:
+            print("Student not found")
+            return False
+        elif get_student['role'] != 'student':
+            print("Student not found")
+            return False
+        student_balance = self.count_balance(student_id)
+        print(f"Student balance: {student_balance}")
+        amount: int = int(input("Amount: "))
+        if amount > student_balance:
+            print("Funds are insufficient")
+            return False
+        data_id = payment_manager.random_id()
+        data = {f"{data_id}": {
+            "id": data_id,
+            "amount": -amount,
+            "student_id": get_student['id'],
+            "create_date": self.__created_data
+        }}
+        threading.Thread(target=payment_manager.append_data, args=(data,)).start()
+        email_subject = "Payment"
+        email_body = f"{amount} uzs have been withdrawn from your account"
+        threading.Thread(target=self.__email_sender.send_email, args=('all', email_subject, email_body)).start()
+        print("Finished")
+        return True
