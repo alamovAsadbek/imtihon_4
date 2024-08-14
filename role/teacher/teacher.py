@@ -16,8 +16,8 @@ class Teacher:
         all_groups: dict = group_manager.read()
         count = 1
         for group in all_groups.values():
-            if group['teacher'] == self.__active_teacher:
-                print(f'{count}. Group name: {group["name"]}, Max students: {group["max_students"]}, '
+            if group['teacher'] == self.__active_teacher['id']:
+                print(f'{count}.ID: {group["id"]}, Group name: {group["name"]}, Max students: {group["max_student"]}, '
                       f'Start time: {group["start_time"]}, End time: {group["end_time"]}, '
                       f'Current students: {len(group["students"])}, Status: {group["status"]}, '
                       f'Created: {group["create_date"]}, ')
@@ -40,14 +40,14 @@ class Teacher:
         elif get_group['teacher'] != self.__active_teacher['id']:
             print("Group not found")
             return False
-        print(f"Group ID: {get_group['id']}, Group name: {get_group['name']}, Max student: {get_group['max_students']},"
+        print(f"Group ID: {get_group['id']}, Group name: {get_group['name']}, Max student: {get_group['max_student']},"
               f" Start time: {get_group['start_time']}, End time: {get_group['end_time']}")
         print("\nGroup students: ")
         for student in get_group['students']:
             get_student: dict = user_manager.get_data(data_id=student)
             if get_student is None or get_student is False:
                 continue
-            print(f"{count}. ID: {student}, Fullname: {get_student['fullname']}, Username: {get_student['username']}, "
+            print(f"{count}. ID: {student}, Fullname: {get_student['full_name']}, Username: {get_student['username']}, "
                   f"XP: {get_student['xp']}")
             count += 1
         if count == 1:
