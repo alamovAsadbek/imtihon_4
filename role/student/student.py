@@ -22,7 +22,7 @@ class Student:
         return True
 
     @log_decorator
-    def student_profile(self):
+    def student_profile(self) -> bool:
         print(f"ID: {self.__active_student['id']}\nUsername: {self.__active_student['username']}\n"
               f"Fullname: {self.__active_student['full_name']}\nAge: {self.__active_student['age']}\n"
               f"Gender: {self.__active_student['gender']}\nPhone number: {self.__active_student['phone_number']}\n"
@@ -35,6 +35,14 @@ class Student:
             if user_input < 1 or user_input > 2:
                 print("Invalid input")
                 continue
+            elif user_input == 1:
+                return True
+            elif user_input == 2:
+                self.update_profile()
+            else:
+                print("Error")
+                return False
+        return True
 
     @log_decorator
     def update_profile(self):
