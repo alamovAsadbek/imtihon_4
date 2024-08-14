@@ -345,15 +345,19 @@ def admin_teacher_menu():
         admin = Admin()
         user_input = int(input('Choose menu: '))
         if user_input == 1:
+            print('\nHome -> Teacher -> Create teacher\n')
             admin.create_teacher()
             admin_teacher_menu()
         elif user_input == 2:
+            print('\nHome -> Teacher -> Update teacher\n')
             admin.update_teacher()
             admin_teacher_menu()
         elif user_input == 3:
+            print('\nHome -> Teacher -> Delete teacher\n')
             admin.delete_group()
             admin_teacher_menu()
         elif user_input == 4:
+            print('\nHome -> Teacher -> Show all teachers\n')
             admin.show_all_teacher()
             admin_teacher_menu()
         elif user_input == 5:
