@@ -62,6 +62,7 @@ class GroupMenu:
         while True:
             if group_manager.check_data_by_key(key='name', value=group_name):
                 print(f"Group {group_name} already exists")
+                group_name = input("Enter a group name: ").strip()
                 continue
             break
         for teacher in self.show_all_teacher():
