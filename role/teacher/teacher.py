@@ -54,3 +54,7 @@ class Teacher:
             print("Group's students not found")
             return False
         return True
+
+    @log_decorator
+    def start_lesson(self) -> bool:
+        pass
