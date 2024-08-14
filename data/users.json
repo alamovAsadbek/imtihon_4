@@ -13,20 +13,6 @@
         "xp": 0,
         "is_login": false
     },
-    "42153": {
-        "id": 42153,
-        "username": "admin_asadbek",
-        "full_name": "A'lamov Asadbek",
-        "password": "0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c",
-        "role": "admin",
-        "create_date": "2024-08-13 11:48:23",
-        "age": 20,
-        "gender": "male",
-        "phone_number": false,
-        "email": false,
-        "xp": 0,
-        "is_login": false
-    },
     "94700": {
         "id": 94700,
         "username": "alamov_asadbek",
@@ -48,11 +34,11 @@
         "password": "b4dd016affbc35ac493857b1846d26f12c9ef725424cdfce09a36a7ccadc154e",
         "role": "student",
         "create_date": "13/08/2024 19:15:07",
-        "age": 25,
+        "age": 80,
         "gender": "male",
-        "phone_number": "990698760",
+        "phone_number": "990690140",
         "email": "alamovasad55@gmail.com",
-        "xp": 4,
+        "xp": 6,
         "is_login": false
     },
     "66139": {
@@ -80,7 +66,7 @@
         "gender": "female",
         "phone_number": "990690145",
         "email": "javohirmirzayev75@gmail.com",
-        "xp": 0,
+        "xp": 2,
         "is_login": false
     },
     "53059": {

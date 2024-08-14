@@ -13,7 +13,7 @@ class Student:
     def show_my_groups(self) -> bool:
         all_group: dict = group_manager.read()
         count = 1
-        for group in all_group:
+        for group in all_group.values():
             if self.__active_student['id'] in group['students']:
                 print(
                     f"{count}. Group ID: {group['id']}, Group name: {group['name']}, Max student: "
@@ -25,7 +25,7 @@ class Student:
         return True
 
     @log_decorator
-    def student_profile(self) -> bool:
+    def student_profile(self):
         print(f"\nID: {self.__active_student['id']}\nUsername: {self.__active_student['username']}\n"
               f"Fullname: {self.__active_student['full_name']}\nAge: {self.__active_student['age']}\n"
               f"Gender: {self.__active_student['gender']}\nPhone number: {self.__active_student['phone_number']}\n"
@@ -41,12 +41,10 @@ class Student:
             elif user_input == 1:
                 return True
             elif user_input == 2:
-                self.update_profile()
-                return True
+                return self.update_profile()
             else:
                 print("Error")
                 return False
-        return True
 
     @log_decorator
     def update_profile(self):
@@ -93,21 +91,23 @@ class Student:
                 print("This phone number is already in use.")
                 continue
             break
+        old_data = self.__active_student
+        self.__active_student = {
+            "id": old_data["id"],
+            "username": old_data['username'],
+            "full_name": fullname,
+            "password": old_data['password'],
+            "role": "student",
+            "create_date": old_data['create_date'],
+            "age": age,
+            "gender": gender,
+            "phone_number": phone_number,
+            "email": email,
+            "xp": old_data['xp'],
+            "is_login": False
+        }
         student_data = {
-            f'{self.__active_student["id"]}': {
-                "id": self.__active_student["id"],
-                "username": self.__active_student['username'],
-                "full_name": fullname,
-                "password": self.__active_student['password'],
-                "role": "student",
-                "create_date": self.__active_student['create_date'],
-                "age": age,
-                "gender": gender,
-                "phone_number": phone_number,
-                "email": email,
-                "xp": self.__active_student['xp'],
-                "is_login": False
-            }
+            f'{old_data["id"]}': self.__active_student
         }
         threading.Thread(target=user_manager.append_data, args=(student_data,)).start()
         print("Your profile updated")

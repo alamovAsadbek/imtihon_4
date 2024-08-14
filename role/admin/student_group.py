@@ -140,6 +140,7 @@ class StudentGroup:
             return False
         for pay_data in get_data['students']:
             student_balance = self.count_balance(user_id=pay_data)
+            get_student = user_manager.get_data(data_id=pay_data)
             if student_balance >= amount:
                 data_id = payment_manager.random_id()
                 data = {f"{data_id}": {
@@ -153,7 +154,7 @@ class StudentGroup:
             else:
                 email_body = 'You do not have enough money for the course, please top up your account'
             threading.Thread(target=self.__email_sender.only_send_email,
-                             args=(email_subject, email_body, pay_data)).start()
+                             args=(email_subject, email_body, get_student['email'])).start()
             print("Finished")
             return True
 
@@ -188,6 +189,7 @@ class StudentGroup:
         threading.Thread(target=payment_manager.append_data, args=(data,)).start()
         email_subject = "Payment"
         email_body = f"{amount} uzs have been withdrawn from your account"
-        threading.Thread(target=self.__email_sender.send_email, args=('all', email_subject, email_body)).start()
+        threading.Thread(target=self.__email_sender.only_send_email,
+                         args=(email_subject, email_body, get_student['email'])).start()
         print("Finished")
         return True
