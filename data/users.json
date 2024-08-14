@@ -48,12 +48,12 @@
         "password": "b4dd016affbc35ac493857b1846d26f12c9ef725424cdfce09a36a7ccadc154e",
         "role": "student",
         "create_date": "13/08/2024 19:15:07",
-        "age": 21,
+        "age": 25,
         "gender": "male",
-        "phone_number": "990690141",
+        "phone_number": "990698760",
         "email": "alamovasad55@gmail.com",
         "xp": 4,
-        "is_login": true
+        "is_login": false
     },
     "66139": {
         "id": 66139,

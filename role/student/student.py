@@ -26,14 +26,14 @@ class Student:
 
     @log_decorator
     def student_profile(self) -> bool:
-        print(f"ID: {self.__active_student['id']}\nUsername: {self.__active_student['username']}\n"
+        print(f"\nID: {self.__active_student['id']}\nUsername: {self.__active_student['username']}\n"
               f"Fullname: {self.__active_student['full_name']}\nAge: {self.__active_student['age']}\n"
               f"Gender: {self.__active_student['gender']}\nPhone number: {self.__active_student['phone_number']}\n"
               f"Email: {self.__active_student['email']}\nXP: {self.__active_student['xp']}\n"
               f"Registered: {self.__active_student['create_date']}")
 
         while True:
-            print('1. Back \t 2. Update profile')
+            print('\n1. Back \t 2. Update profile\n')
             user_input: int = int(input("Choose: "))
             if user_input < 1 or user_input > 2:
                 print("Invalid input")
@@ -42,6 +42,7 @@ class Student:
                 return True
             elif user_input == 2:
                 self.update_profile()
+                return True
             else:
                 print("Error")
                 return False
@@ -51,13 +52,14 @@ class Student:
     def update_profile(self):
         print("\nEnter new data\n")
         fullname: str = input("Fullname: ").strip()
-        age: int = int(input("Age: ").strip())
         while True:
             email: str = input('Email: ').strip()
             if not user_manager.is_valid_email_format(email=email):
                 print("Email validation failed, please try again.")
                 print("Example: email@gmail.com")
                 continue
+            elif email == self.__active_student['email']:
+                pass
             elif user_manager.check_data_by_key(key='email', value=email) or email == self.__admin_email:
                 print("This email is already registered.")
                 continue

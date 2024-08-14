@@ -511,7 +511,8 @@ def show_student_menu():
             show_student_menu()
         elif user_input == 2:
             print("\nHome -> Profile")
-            pass
+            student.student_profile()
+            show_student_menu()
         elif user_input == 3:
             print('Logout successful')
             auth.logout()
