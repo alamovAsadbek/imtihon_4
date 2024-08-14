@@ -1,6 +1,7 @@
 from main_files.auth import Auth
 from main_files.decorator_func import log_decorator
 from role.admin.admin import Admin
+from role.student.student import Student
 from role.super_admin.super_admin import SuperAdmin
 from role.teacher.teacher import Teacher
 
@@ -502,10 +503,12 @@ def show_student_menu():
     '''
     print(text)
     try:
+        student = Student()
         user_input = int(input('Choose menu: '))
         if user_input == 1:
             print("\nHome -> Show all")
-            pass
+            student.show_my_groups()
+            show_student_menu()
         elif user_input == 2:
             print("\nHome -> Profile")
             pass
