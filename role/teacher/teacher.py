@@ -6,11 +6,11 @@ from main_files.json_manager import user_manager, group_manager
 
 class Teacher:
     def __init__(self):
-        self.__create_date = datetime.datetime.now().strftime("%d.%m.%Y").__str__()
+        self.__create_date = datetime.datetime.now().strftime('%d.%m.%Y').__str__()
         self.__active_teacher = user_manager.get_active_user()
 
     @log_decorator
-    def my_groups(self) -> str or bool:
+    def my_groups(self) -> bool:
         all_groups: dict = group_manager.read()
         count = 1
         for group in all_groups.values():

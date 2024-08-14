@@ -52,9 +52,9 @@ class JsonManager:
 
     @log_decorator
     def get_active_user(self) -> dict or bool:
-        all_users: list = self.read()
+        all_users: dict = self.read()
         try:
-            for key, value in all_users:
+            for value in all_users.values():
                 if value['is_login']:
                     return value
             return False

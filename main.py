@@ -464,21 +464,24 @@ def show_teacher_menu():
     print(text)
     try:
         teacher = Teacher()
-        user_input = int(input('Choose menu: '))
-        if user_input == 1:
+        choose_menu: int = int(input('Choose menu: '))
+        if choose_menu == 1:
             print('\nHome -> My groups\n')
             teacher.my_groups()
             show_teacher_menu()
-        elif user_input == 2:
+        elif choose_menu == 2:
             print('\nHome -> Search teacher\n')
             pass
-        elif user_input == 3:
+        elif choose_menu == 3:
             print('\nHome -> Lesson\n')
             pass
-        elif user_input == 4:
+        elif choose_menu == 4:
             print("Logout successful")
             auth.logout()
             show_auth()
+        else:
+            print("Wrong input")
+            show_teacher_menu()
     except ValueError:
         print("Invalid input")
         show_teacher_menu()
