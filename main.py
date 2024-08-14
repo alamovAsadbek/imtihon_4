@@ -265,6 +265,7 @@ def show_admin_menu():
             admin_student_menu()
         elif user_input == 3:
             print('\nHome -> Teacher\n')
+            admin_teacher_menu()
         elif user_input == 4:
             print('\nHome -> Add student to group\n')
             admin.add_student_to_group()
@@ -340,6 +341,29 @@ def admin_teacher_menu():
 5. Back
     '''
     print(text)
+    try:
+        admin = Admin()
+        user_input = int(input('Choose menu: '))
+        if user_input == 1:
+            admin.create_teacher()
+            admin_teacher_menu()
+        elif user_input == 2:
+            admin.update_teacher()
+            admin_teacher_menu()
+        elif user_input == 3:
+            admin.delete_group()
+            admin_teacher_menu()
+        elif user_input == 4:
+            admin.show_all_teacher()
+            admin_teacher_menu()
+        elif user_input == 5:
+            show_admin_menu()
+    except ValueError:
+        print("Invalid input")
+        admin_teacher_menu()
+    except Exception as e:
+        print(f'Error: {e}')
+        admin_teacher_menu()
 
 
 # A function related to groups in the Admin menu
