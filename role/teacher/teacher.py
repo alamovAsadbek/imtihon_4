@@ -47,4 +47,10 @@ class Teacher:
             get_student: dict = user_manager.get_data(data_id=student)
             if get_student is None or get_student is False:
                 continue
-            print(f"{count}. ID: {student}, Fullname: {get_student['fullname']}, ")
+            print(f"{count}. ID: {student}, Fullname: {get_student['fullname']}, Username: {get_student['username']}, "
+                  f"XP: {get_student['xp']}")
+            count += 1
+        if count == 1:
+            print("Group's students not found")
+            return False
+        return True

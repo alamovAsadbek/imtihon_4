@@ -471,7 +471,8 @@ def show_teacher_menu():
             show_teacher_menu()
         elif choose_menu == 2:
             print('\nHome -> Search teacher\n')
-            pass
+            teacher.show_student_to_group()
+            show_teacher_menu()
         elif choose_menu == 3:
             print('\nHome -> Lesson\n')
             pass
