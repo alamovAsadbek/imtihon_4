@@ -2,6 +2,7 @@ from main_files.auth import Auth
 from main_files.decorator_func import log_decorator
 from role.admin.admin import Admin
 from role.super_admin.super_admin import SuperAdmin
+from role.teacher.teacher import Teacher
 
 
 # This function is auth menu
@@ -462,10 +463,12 @@ def show_teacher_menu():
     '''
     print(text)
     try:
+        teacher = Teacher()
         user_input = int(input('Choose menu: '))
         if user_input == 1:
             print('\nHome -> My groups\n')
-            pass
+            teacher.my_groups()
+            show_teacher_menu()
         elif user_input == 2:
             print('\nHome -> Search teacher\n')
             pass
