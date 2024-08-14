@@ -475,7 +475,8 @@ def show_teacher_menu():
             show_teacher_menu()
         elif choose_menu == 3:
             print('\nHome -> Lesson\n')
-            pass
+            teacher.start_lesson()
+            show_teacher_menu()
         elif choose_menu == 4:
             print("Logout successful")
             auth.logout()
